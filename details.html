@@ -330,7 +330,41 @@
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 							<div class="table-block-dash my-order-block-table">
-								<div class="left-bar-head get-uploading table-bordered">طلباتي</div>
+								<div class="left-bar-head get-uploading table-bordered">معلومات الطلب</div>
+								<div class="table-responsive">
+
+
+									<table id="mytable" class="table table-bordred table-striped">
+										<div class="col-xs-12">
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span> رقم الطلب: <b> 101010110</b></p>
+											<p class="col-xs-12 col-sm-3"> حالة الطلب:
+												<b class="label label-default"> قائمة الانتظار </b>
+												<b class="label label-primary"> يتم تنفيذ الطلب </b>
+												<b class="label label-warning"> جاهز للاستلام</b>
+												<b class="label label-info"> جاهز للتوصيل</b>
+												<b class="label label-success"> تم الاستلام</b>
+												<b class="label label-danger"> تم حذف الطلب</b>
+											</p>
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> تاريخ الطلب: <b> ٢٢/١٢/١٩٩٤</b></p>
+											<p class="col-xs-12 col-sm-3">طريقة الدفع: <b> كاش</b></p>
+										</div>
+										<div class="col-xs-12">
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>استلام من فرع: <b> Jarir BookStore</b></p>
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>توصيل: <b> ١٨١ ش جمال عبد الناصر</b></p>
+										</div>
+										<div class="col-xs-12">
+											<p class="col-xs-12 col-sm-3">المبلغ: <b> ١٠٠</b></p>
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> الطباعة: <b> جيدة</b></p>
+											<p class="col-xs-12 col-sm-3"><span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> الضريبة: <b> ٠٪</b></p>
+											<p class="col-xs-12 col-sm-3">اجمالي المبلغ: <b> ١٠٠٠٠ريال</b></p>
+										</div>
+									</table>
+
+								</div>
+
+							</div>
+							<div class="table-block-dash my-order-block-table">
+								<div class="left-bar-head get-uploading table-bordered">ملفات الطلب</div>
 								<div class="table-responsive">
 
 
@@ -338,56 +372,26 @@
 
 										<thead>
 
-											<th><a class="icon" href="javascript:void(0);"> رقم&nbsp; الطلب </a></th>
-											<th style="text-align: center;"><a class="icon" href="javascript:void(0);">حالة الطباعة</a></th>
-											<th class="hidden"><a class="icon" href="javascript:void(0);">   تتبع الطلب   </a></th>
-											<th><a class="icon" href="javascript:void(0);">كمية</a></th>
-											<th><a class="icon" href="javascript:void(0);">مجموع</a></th>
-											<th><a class="icon" href="javascript:void(0);"> تاريخ </a></th>
-											<th><a class="icon" href="javascript:void(0);"> التفاصيل </a></th>
-											<th><a class="icon" href="javascript:void(0);"> حذف </a></th>
+											<th><a class="icon" href="javascript:void(0);"> اسم الملف </a></th>
+											<th style="text-align: center;"><a class="icon" href="javascript:void(0);">
+											التفاصيل</a></th>
+											<th><a class="icon" href="javascript:void(0);">السعر</a></th>
+											<th><a class="icon" href="javascript:void(0);">الكمية</a></th>
+											<th><a class="icon" href="javascript:void(0);">الاجمالي</a></th>
+											<th><a class="icon" href="javascript:void(0);"> خيارات </a></th>
 										</thead>
 										<tbody>
 
 											<tr>
-												<td>011234</td>
-												<td>تحت التنفيذ</td>
-												<td>4</td>
-												<td>31.3</td>
-												<td>Dec 22, 1994</td>
+												<td>Test.pdf</td>
+												<td>ورق عادي ، تغليف دبوس</td>
+												<td>20 ريال</td>
+												<td>3</td>
+												<td>40 ريال</td>
 												<td>
-													<p data-placement="top" data-toggle="tooltip" title="Edit">
-														<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-													</p>
-												</td>
-												<td>
-													<p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
+													<p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-info btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-book"></span> مشاهدة</button></p>
 												</td>
 											</tr>
-
-
-											<tr>
-												<td>011234</td>
-												<td>تحت التنفيذ</td>
-												<td>4</td>
-												<td>31.3</td>
-												<td>Dec 22, 1994</td>
-												<td>
-													<p data-placement="top" data-toggle="tooltip" title="Edit">
-														<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-													</p>
-												</td>
-												<td>
-													<p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-												</td>
-											</tr>
-
-
-
 
 
 										</tbody>
@@ -400,44 +404,15 @@
 
 							</div>
 						</div>
-						<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-							<div class="modal-dialog">
-								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-										<h4 class="modal-title custom_align" id="Heading">تعديل علي طلبك</h4>
-									</div>
-									<div class="modal-body">
-										<div class="form-group">
-											<input class="form-control " type="text" placeholder="الكمية">
-										</div>
-									</div>
-									<div class="modal-footer ">
-										<button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> تحديث</button>
-									</div>
-								</div>
-								<!-- /.modal-content -->
-							</div>
-							<!-- /.modal-dialog -->
-						</div>
-
 
 
 						<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
 							<div class="modal-dialog">
 								<div class="modal-content">
-									<div class="modal-header">
-										<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-										<h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
-									</div>
 									<div class="modal-body">
-
-										<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you want to delete this Record?</div>
-
-									</div>
-									<div class="modal-footer ">
-										<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-										<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> No</button>
+										<object width="570" height="500" data="http://www.pdf995.com/samples/pdf.pdf">
+										jss
+										</object>
 									</div>
 								</div>
 								<!-- /.modal-content -->
