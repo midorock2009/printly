@@ -1,0 +1,49 @@
+// GENERAL
+#add-address-modal
+  h3
+    color: $gray-text-color
+    margin: 30px 0 15px 0
+    text-align: center
+  & .modal-content
+    border-radius: 0
+  & .modal-body
+    padding: 0 50px
+
+// FORM
+.add-address-form
+  display: flex
+  flex-direction: column
+  input
+    width: 100%
+    border: 1px solid $gray-border-color
+    margin-top: 15px
+    height: 35px
+    text-indent: 15px
+    &:focus
+      border: 1px solid $violet
+    &::placeholder
+      font-weight: 400
+  select
+    width: 100%
+    font-weight: 400
+    height: 35px
+    text-indent: 15px
+    border: 1px solid $gray-border-color
+    margin-top: 15px
+    &:focus
+      border: 1px solid $violet
+      outline: none
+  button
+    height: 45px
+    width: 180px
+    background: $yellow
+    border: 1px solid $yellow
+    border-radius: 45px
+    font-weight: 300
+    font-size: 18px
+    align-self: center
+    margin: 30px 0
+
+.add-address-form-placeholder
+  font-weight: 300
+  color: $gray-text-color

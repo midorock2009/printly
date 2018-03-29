@@ -1,0 +1,86 @@
+.faq
+  margin-top: 100px
+  margin-bottom: 75px
+  &-accordion
+    margin-bottom: 65px
+.panel
+  border-bottom: 1px solid $gray-border-color
+  h3
+    font-weight: 500
+    font-size: 20px
+.panel-group .panel
+  margin-bottom: 15px
+  border-radius: 0
+  box-shadow: none
+.panel-content
+  padding-bottom: 45px
+  p
+    line-height: 24px
+    font-size: 16px
+    font-weight: 300
+
+.panel-title
+  padding: 24px 0 24px 0
+  position: relative
+  a
+    display: block
+    position: relative
+    z-index: 1
+    padding-left: 22px
+.panel-title-minus:after
+  font-family: 'ralewayregular', sans-serif
+  content: '\e90f'
+  position: absolute
+  top: 24px
+  left: 0
+  color: $violet
+  font-size: 20px
+.panel-title-plus:after
+  font-family: 'ralewayregular', sans-serif
+  content: '\e914'
+  position: absolute
+  top: 24px
+  left: 0
+  font-size: 20px
+  color: $violet
+
+.faq-form
+  margin: 0 auto
+  width: 450px
+  max-width: 100%
+  margin-top: 40px
+  margin-bottom: 25px
+  position: relative
+  label
+    width: 100%
+  input[type=text]
+    height: 48px
+    border: 1px solid $gray-border-color
+    border-radius: 40px
+    width: 100%
+    text-indent: 20px
+    padding-left: 45px
+    font-weight: 400
+    &::placeholder
+      font-weight: 300
+      font-size: 16px
+  input[type=submit]
+    position: absolute
+    border: none
+    background: $yellow
+    border-radius: 50px
+    top: 3px
+    left: 3px
+    height: 42px
+    width: 42px
+  &-send-label:before
+    position: absolute
+    content: '\e916'
+    font-family: $icon-font
+    font-size: 20px
+    color: $white
+    top: 10px
+    left: 14px
+    z-index: 1
+    cursor: pointer
+    font-weight: 100

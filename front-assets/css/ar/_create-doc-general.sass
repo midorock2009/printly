@@ -1,0 +1,104 @@
+// GENERAL BEGIN
+.back-forward
+  display: flex
+  justify-content: space-between
+  margin-top: 20px
+  margin-bottom: 20px
+  a
+    color: $gray-text-color
+    i
+      color: inherit
+
+.title-block
+  display: flex
+  justify-content: center
+  align-items: center
+  padding: 10px 15px
+  border: 1px solid $gray-border-color
+  background: $gray-bg
+  margin-bottom: 30px
+  span
+    font-weight: 500
+    font-size: 18px
+
+.create-doc-type
+  i
+    font-size: 75px
+    margin-bottom: 10px
+    margin-top: 40px
+    display: block
+  label
+    width: 90%
+    font-weight: 400
+    padding-bottom: 20px
+    font-size: 18px
+    min-height: 228px
+  &-start
+    display: flex
+    justify-content: flex-end
+    margin-bottom: 20px
+  &-center
+    display: flex
+    justify-content: center
+    margin-bottom: 20px
+  &-end
+    display: flex
+    justify-content: flex-start
+    margin-bottom: 20px
+
+.create-doc-type .calc-radio:checked + label i
+  color: $yellow
+
+.account-balance
+  display: inline-flex
+  font-size: 14px
+  position: absolute
+  font-weight: 300
+  span
+    margin-right: 8px
+
+.note
+  margin-top: 5px
+  font-weight: 500
+  display: flex
+  span
+    color: $red
+    padding: 0 5px
+  i
+    font-size: 20px
+
+.create-btn-step-2
+  margin-bottom: 30px
+
+// TOTAL PRICE
+.total-price-in-footer
+  height: 50px
+  background: linear-gradient(#631383, #631383)
+  position: fixed
+  width: 100%
+  bottom: 0
+  z-index: 1
+  &-wrap
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $white
+    height: 50px
+    h4
+      font-size: 24px
+    span
+      padding: 5px 26px 5px 24px
+      color: $violet
+      margin-right: 15px
+      background: $white
+      font-weight: 400
+      font-size: 18px
+
+.sticky
+  position: -webkit-sticky !important
+  position: -moz-sticky
+  position: -ms-sticky
+  position: -o-sticky
+  bottom: 430px
+
+// GENERAL EOF

@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Printly</title>
+
+	<meta name="description" content="منصة إطبع (Print) أكبر موقع للطباعة الإلكترونية في المملكة العربية السعودية, قم بطباعة أوراقك ومستنداتك (المكتبية, الخاصة, الملازم, آخرى..) بجميع الأحجام (A0 - A1 - A2 - A3 - A4 - A5) مع توفر عدة خيارات للطباعة والتغليف مع تنوع طرق الدفع و توصليها لك لمنزلك او أقرب نقطة إستلام لك." />
+	<meta name="keywords" content="الطباعة الرقمية، الطباعة، الرقمية، الأوراق، المملكة العربية السعودية، الطباعة، وثيقة، طباعة الوثائق، أسود، الملونة، الطابعات المهنية" />
+	<meta name="robots" content="index,follow" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109254566-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-109254566-1');
+
+	</script>
+
+
+	<!--font-awesome-css-start-here-->
+	<link href="https://www.print.sa/front-assets/css/font-awesome.min.css?v=11" rel="stylesheet" type="text/css" />
+	<link href="https://www.print.sa/front-assets/css/animate.css?v=11" rel="stylesheet" type="text/css" />
+
+	<link href="https://www.print.sa/assets/alert/css/alert.css?v=11" rel="stylesheet" />
+	<link href="https://www.print.sa/assets/alert/themes/default/theme.css?v=11" rel="stylesheet" />
+	<!--previous css used starts-->
+
+	<link href="https://www.print.sa/front-assets/css/dropzone.css?v=11" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="front-assets/css/ar/bootstrap.min.css" rel="stylesheet">
+	<link href="https://www.print.sa/front-assets/css/ar/slick.css?v=11" rel="stylesheet">
+	<link href="front-assets/css/ar/style.css" rel="stylesheet">
+	<link href="front-assets/css/rtl.css" rel="stylesheet" type="text/css" />
+
+	<!--previous css used ends-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="front-assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="front-assets/images/favicon-16x16.png">
+	<!--  RTL-->
+	<!--   -->
+
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/bootstrap.min.js?v=11"></script>
+	<script type="text/javascript">
+		var SITE_URL = 'file:///C:/My%20Web%20Sites/printly';
+
+	</script>
+
+
+	<!--previous JS used starts-->
+
+	<script src="https://www.print.sa/front-assets/js/angular/angular.js?v=11"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.js"></script> -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-route.js?v=11"></script>
+	<!--angular message js-->
+
+	<script src="https://www.print.sa/front-assets/js/angular/main.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-messages.js?v=11" type="text/javascript"></script>
+	<!-- Angular assets start -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/ng-file-upload.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/ng-file-upload-shim.js?v=11" type="text/javascript"></script>
+	<!-- Angular assets ends -->
+	<!-- Angular Controller JS starts -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/LoginCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/CMSCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/UserCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/AddressBookCtrl.js?v=11" type="text/javascript"></script>
+	<!-- Angular Controller JS ends -->
+	<!--  Capcha start -->
+
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/angular-recaptcha.js?v=11"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/captcha-service.js?v=11"></script>
+	<!--  Capcha end -->
+	<script src="https://www.print.sa/front-assets/js/dropzone.min.js?v=11" type="text/javascript"></script>
+	<!-- Angular Controller JS starts -->
+
+	<style type="text/css">
+		.frogot_submit_btn p {
+			margin-bottom: 0;
+			color: #fff;
+		}
+
+		.other-login {
+			display: block;
+			margin: 17px 0;
+		}
+
+		.other-login ul {
+			padding: 0;
+		}
+
+		.other-login ul li {
+			display: block;
+			text-align: center;
+			margin: 10px 0;
+			list-style-type: none;
+			float: none;
+		}
+
+		.other-login ul li.gplus {
+			float: none
+		}
+
+		.fa {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		.gplus a {
+			background: #df4a32;
+			border-radius: 30px;
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			height: 40px;
+			padding: 9px 15px;
+		}
+
+		.fb a {
+			background: #3a579a;
+			border-radius: 30px;
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			height: 40px;
+			padding: 9px 15px;
+		}
+
+		.or-option {
+			width: 270px;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+			margin-top: 10px;
+		}
+
+
+		/*back to top btn css start here*/
+
+		.img-block-user {
+			border-radius: 50%;
+			display: inline-block;
+			height: 35px;
+			margin-right: 10px;
+			overflow: hidden;
+			width: 35px;
+			vertical-align: middle;
+		}
+
+		.cd-top.cd-is-visible {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		.cd-top.cd-is-visible,
+		.cd-top.cd-fade-out,
+		.no-touch .cd-top:hover {
+			transition: opacity 0.3s ease 0s, visibility 0s ease 0s;
+		}
+
+		.cd-top {
+			background-color: #FFCF60;
+			background-image: url("front-assets/images/up-arrow.png");
+			background-repeat: no-repeat;
+			background-position: center 50%;
+			border-radius: 100px;
+			bottom: 40px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+			display: inline-block;
+			height: 36px;
+			opacity: 0;
+			outline: medium none;
+			overflow: hidden;
+			position: fixed;
+			right: 30px;
+			text-indent: 100%;
+			transition: opacity 0.3s ease 0s, visibility 0s ease 0.3s;
+			visibility: hidden;
+			white-space: nowrap;
+			width: 36px;
+			z-index: 99;
+		}
+
+		/*back to top btn css end here*/
+
+		.modal.container {
+			max-width: none;
+		}
+
+		.modal-backdrop {
+			z-index: 8 !important;
+		}
+
+		.ng-cloak {
+			display: none;
+		}
+
+		.pdfFileName {
+			padding: 20px 10px !important;
+		}
+
+		.table>tbody>tr>td {
+			vertical-align: middle !important;
+		}
+
+		.printly {
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			transition: all 1s ease;
+			color: #5FB7E1
+		}
+
+		.design {
+			font-size: 20px;
+			font-weight: bold;
+			color: #FFCF60;
+			-webkit-transition: all 1s ease;
+			-moz-transition: all 1s ease;
+			-ms-transition: all 1s ease;
+			-o-transition: all 1s ease;
+			transition: all 1s ease;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		var site_url = "https://www.print.sa";
+		var csrf_token = "KZgGaBbl2YDP2TOHdvrLSj2AG6XM4BX8xkBITBhR";
+
+	</script>
+
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+	<style type="text/css">
+		.img-block-user {
+			border-radius: 50%;
+			display: inline-block;
+			height: 35px;
+			margin-right: 10px;
+			overflow: hidden;
+			width: 35px;
+			vertical-align: middle !important;
+		}
+
+		.languag-head {
+			margin-top: 30px;
+			float: left;
+		}
+
+		.languag-head a {
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.languag-head a:hover {
+			color: #631383;
+		}
+
+		/*.pdfFileName {white-space: nowrap;width: 160px;overflow: hidden;text-overflow: ellipsis;display: inline-block;padding: 20px 10px;}*/
+
+	</style>
+	<link href="front-assets/css/printdotsa.css" rel="stylesheet">
+</head>
+
+<body ng-app="printingStore" onload="return testIng();">
+	<!-- LOGIN MODAL BEGIN -->
+	<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg login-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row">
+						<div class="display-flex">
+							<div class="col-md-6 col-sm-6 col-sm-12 col-xs-12 display-flex" ng-controller="LoginCtrl" ng-init='module_url="https://www.print.sa/validate_login";'>
+								<div class=" login-left-side">
+									<a class="close-login-modal visible-mobile-flex" data-dismiss="modal"><i class="icon-close"></i></a>
+									<h2>تسجيل الدخول</h2>
+									<form name="loginForm" ng-submit="loginForm.$valid && storeLogin()" novalidate class="login-modal-form">
+										<div id="login_status_msg"></div>
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': loginForm.email.$touched && loginForm.email.$invalid }">
+											<input type="text" name="email" ng-model="user.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-required="true" placeholder="   أدخل بريدك الإلكتروني   ">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="loginForm.email.$error" ng-if="loginForm.$submitted || loginForm.email.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': loginForm.password.$touched && loginForm.password.$invalid }">
+											<input type="password" name="password" ng-model="user.password" ng-required="true" placeholder="كلمه السر">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="loginForm.password.$error" ng-if="loginForm.$submitted || loginForm.password.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+										<button class="login-btn" type="submit">تسجيل الدخول</button>
+										<p><a onclick="openForgetModal(event)" class="recover-pass-link">إستعادة كلمة المرور</a></p>
+										<div class="or-option removeOnload" style="display: none;"><span> أو </span>
+											<div class="other-login removeOnload" style="display: none;">
+												<ul>
+													<li class="fb"><a href="https://www.print.sa/social_auth/facebook/login"><span> تسجيل الدخول مع  </span><i class="fa fa-facebook" aria-hidden="true"></i></a>
+													</li>
+													<li class="gplus"><a href="https://www.print.sa/social_auth/google/login"><span> تسجيل الدخول مع  </span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-sm-12 display-flex hidden-xs">
+								<div class="login-right-side">
+									<a class="close-login-modal" data-dismiss="modal"><i class="icon-close"></i></a>
+									<h3> إنشاء حساب </h3>
+									<p> لديك حساب؟ إنشاء حسابك الأن , يستغرق أقل من دقيقة </p>
+									<button onclick="openSignUpModal()"> إنشاء حساب </button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- LOGIN MODAL EOF -->
+	<!-- FORGET MODAL BEGIN -->
+	<div class="modal fade" id="forget-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg login-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row">
+						<div class="display-flex">
+							<div class="col-md-6 col-sm-6 col-xs-12 display-flex" class="col-sm-6 col-md-6 col-lg-6" ng-controller="LoginCtrl" ng-init='module_url="https://www.print.sa";'>
+								<div class="login-left-side">
+									<a class="close-login-modal visible-mobile-flex" data-dismiss="modal"><i class="icon-close"></i></a>
+									<form class="login-modal-form" name="forgetPasswordForm" ng-submit="forgetPasswordForm.$valid && storeForgetPassword()" novalidate>
+										<p class="forget-field-back"><a onclick="openLoginModal()"><i class="icon-back"></i>الى الخلف</a></p>
+										<h2>
+											<p>هل نسيت كلمة المرور ؟</p>
+										</h2>
+										<p> لإعادة ضبط كلمة المرور الرجاء ادخال البريد الإلكتروني المستخدم لتسجيل الدخول. </p>
+										<div id="forget_status_msg"></div>
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': forgetPasswordForm.forgetemail.$touched && forgetPasswordForm.forgetemail.$invalid }">
+											<input type="email" name="forgetemail" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" ng-model="forgetuser.forgetemail" ng-required="true" placeholder="Email">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="forgetPasswordForm.forgetemail.$error" ng-if="forgetPasswordForm.$submitted || forgetPasswordForm.forgetemail.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+										<button class="frogot_submit_btn"><p>طلب</p></button>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 display-flex hidden-xs">
+								<div class="login-right-side">
+									<a class="close-login-modal" data-dismiss="modal"><i class="icon-close"></i></a>
+									<h3>
+										<p>إنشاء حساب</p>
+									</h3>
+									<p> لديك حساب؟ إنشاء حسابك الأن , يستغرق أقل من دقيقة </p>
+									<button onclick="openSignUpModal()"><p>إنشاء حساب</p></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- FORGET MODAL EOF -->
+
+	<!-- SIGN UP MODAL BEGIN -->
+	<div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-lg login-modal" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<div class="row">
+						<div class="display-flex">
+							<div class="col-md-6 col-sm-6 col-xs-12 display-flex" ng-controller="LoginCtrl" ng-init='module_url="https://www.print.sa";'>
+								<div class="login-left-side">
+									<a class="close-login-modal visible-mobile-flex" data-dismiss="modal"><i class="icon-close"></i></a>
+									<h2> إنشاء حسابك في اطبع </h2>
+
+									<div class="hidden">
+
+										<br><br>
+
+
+										<p>السادة زوار منصة اطبع …</p>
+										<p>
+											نظرا للإقبال الرائع على الخدمة والذي فاق توقعاتنا فإنه يؤسفنا ابلاغكم بايقاف عملية التسجيل لمستخدمين جدد حاليا وسيتم اعادة فتح التسجيل بتاريخ 1 مارس 2018
+										</p>
+										<br>
+										<p>تحياتنا </p>
+										<p>إدارة المنصة</p>
+
+									</div>
+									<form class="login-modal-form" name="signupForm" ng-submit="signupForm.$valid && storeSignup();" novalidate>
+										<div id="signup_status_msg"></div>
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.firstname.$touched && signupForm.firstname.$invalid }">
+											<input type="text" name="firstname" ng-model="signupuser.firstname" ng-maxlength="100" ng-required="true" placeholder="الاسم الاول">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.firstname.$error" ng-if="signupForm.$submitted || signupForm.firstname.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">أقصى 100 يمكن إدخال الأحرف.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.lastname.$touched && signupForm.lastname.$invalid }">
+											<input type="text" name="lastname" ng-model="signupuser.lastname" ng-maxlength="100" ng-required="true" placeholder=" اسم العائلة ">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.lastname.$error" ng-if="signupForm.$submitted || signupForm.lastname.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">أقصى 100 يمكن إدخال الأحرف.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.email.$touched && signupForm.email.$invalid }">
+											<input type="email" name="email" ng-model="signupuser.email" ng-required="true" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" placeholder="   أدخل بريدك الإلكتروني   ">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.email.$error" ng-if="signupForm.$submitted || signupForm.email.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+												<p id="err_email" class="error"></p>
+											</div>
+										</div>
+
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.phone.$touched && signupForm.phone.$invalid }">
+											<input type="text" name="phone" ng-model="signupuser.phone" ng-minlength="10" ng-maxlength="16" ng-required="true" ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/" placeholder="رقم الاتصال" maxLength="16">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.phone.$error" ng-if="signupForm.$submitted || signupForm.phone.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">أقصى 16 يمكن إدخال الأحرف.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">يجب أن يكون رقم هاتف صالحا</p>
+												<p id="err_mobile" class="error"></p>
+											</div>
+										</div>
+
+										<h5> هل أنت طالب جامعي؟ </h5>
+										<div class="radio-btns" ng-init="signupuser.is_university_student = 'no'">
+											<div class="radio-btn">
+												<input type="radio" id="f-option" ng-model="signupuser.is_university_student" name="is_university_student" value="yes">
+												<label for="f-option"> نعم&nbsp; </label>
+												<div class="check"></div>
+											</div>
+											<div class="radio-btn">
+												<input type="radio" id="s-option" ng-model="signupuser.is_university_student" name="is_university_student" ng-model="is_university_student" value="no" checked="true">
+												<label for="s-option"> لا </label>
+												<div class="check">
+													<div class="inside"></div>
+												</div>
+											</div>
+											<div class="clearfix"></div>
+
+											<div class="clr"></div>
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.is_university_student.$error" ng-if="signupForm.$submitted || signupForm.is_university_student.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+
+										<div ng-show="signupuser.is_university_student == 'yes'" class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.country_id.$touched && signupForm.country_id.$invalid }" ng-init="getCountries('show_selected');">
+											<select style="margin-bottom: 20px;" name="country_id" id="country_id" ng-model="signupuser.country_id" ng-required="signupuser.is_university_student == 'yes'" ng-change="getUniversity(signupuser.country_id)">
+                              <option value="" disabled selected>حدد الدولة</option>
+                              <option ng-repeat="country in arr_countries" value="[[country.id]]">[[country.country_name]]</option>
+                          </select>
+											<span class="caret-icon-block"><i class="fa fa-caret-down"></i></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.country_id.$error" ng-if="signupForm.$submitted || signupForm.country_id.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+												<p id="err_mobile" class="error"></p>
+											</div>
+										</div>
+
+										<div ng-show="signupuser.is_university_student == 'yes'" class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.university_id.$touched && signupForm.university_id.$invalid }">
+											<!-- ng-init="getCountries();" -->
+
+											<select name="university_id" id="university_id" ng-model="signupuser.university_id" ng-required="signupuser.is_university_student == 'yes'">
+                              <option value="" disabled selected> حدد الجامعة </option>
+                              <option ng-repeat="university in arr_university" value="[[university.id]]">[[university.name]]</option>
+                              <option value="0">آخر</option>
+                          </select>
+											<span class="caret-icon-block"><i class="fa fa-caret-down"></i></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.university_id.$error" ng-if="signupForm.$submitted || signupForm.university_id.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+												<p id="err_mobile" class="error"></p>
+											</div>
+										</div>
+
+										<div ng-show="signupuser.university_id == '0'" class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.other_university.$touched && signupForm.other_university.$invalid }">
+											<input type="text" name="other_university" id="other_university" ng-model="signupuser.other_university" ng-required="signupuser.university_id == '0'" placeholder=" Other University ">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.other_university.$error" ng-if="signupForm.$submitted || signupForm.other_university.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.password.$touched && signupForm.password.$invalid }">
+											<input type="password" name="password" id="password" ng-model="signupuser.password" ng-minlength="6" ng-required="true" placeholder="كلمه السر">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.password.$error" ng-if="signupForm.$submitted || signupForm.password.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+											</div>
+										</div>
+
+										<div class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.confirmpassword.$touched && signupForm.confirmpassword.$invalid }">
+											<input type="password" name="confirmpassword" id="confirmpassword" ng-model="signupuser.confirmpassword" ng-required="true" pw-check="password" placeholder="تأكيد كلمة المرور">
+											<span class="highlight"></span>
+											<div class="error-new-block ng-cloak" ng-messages="signupForm.confirmpassword.$error" ng-if="signupForm.$submitted || signupForm.confirmpassword.$touched">
+												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
+												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
+												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
+												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
+												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
+												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
+												<p ng-show="signupForm.confirmpassword.$error.pwmatch" class="error">كلمات المرور غير متطابقة.</p>
+
+											</div>
+										</div>
+
+										[[ signupForm.$errors ]]
+										<button class="login-btn" type="submit">تسجيل</button>
+										<div class="or-option removeOnload" style="display: none;"> أو </div>
+										<div class="other-login removeOnload" style="display: none;">
+											<ul>
+												<li class="fb"><a href="https://www.print.sa/social_auth/facebook/init"><span> تسجيل الدخول مع </span><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+												<li class="gplus"><a href="https://www.print.sa/social_auth/google/init"><span> تسجيل الدخول مع </span><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+											</ul>
+										</div>
+
+
+
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 display-flex hidden-xs">
+								<div class="login-right-side">
+									<a class="close-login-modal" data-dismiss="modal">
+                    <i class="icon-close"></i>
+                  </a>
+									<h3>تسجيل الدخول</h3>
+									<p> هل لديك حساب؟ </p>
+									<button onclick="openLoginModal()">تسجيل الدخول</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- SIGN UP MODAL EOF -->
+
+	<!-- HEADER BEGIN -->
+	<header class="container-fluid header first-screen">
+		<div class="scroll-down scroll"><button data-toggle="modal" data-target="#login-modal" class="btn-art">   بدء الطباعة   </button></div>
+		<!--<div class="header-wave-one"></div>-->
+
+		<!--<div class="header-wave-two"></div>-->
+		<div class="header-overlay"></div>
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<!--Before login starts here-->
+					<div class="col-xs-12 animate-top-menu">
+						<nav class="navbar navbar-art">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<div class="btns-menu-open-close">
+									<span class="menu-open-btn">&#9776;</span>
+									<span class="menu-open-btn-close">&times;</span>
+								</div>
+								<ul class="nav navbar-nav navbar-right visible-mobile-flex">
+									<li class="lang">
+										<div class="wrapper-dropdown-1" id="dd">
+											<span id="new_word">
+<!--
+                                                        <a onclick="changeLanguage('en');" class="hidden-xs">
+                              English
+                              </a>
+                              <a onclick="changeLanguage('en');" class="hidden-lg hidden-md hidden-sm">
+                              Eng
+                              </a>
+-->
+                                                    </span>
+										</div>
+									</li>
+									<!-- <li class="login-button"><a href="https://www.print.sa/login">تسجيل الدخول</a></li>
+                  <li class="sign-up-button"><a href="https://www.print.sa/signup"><p>إنشاء حساب</p></a></li> -->
+									<li class="login-button"><a href="#" data-toggle="modal" data-target="#login-modal">تسجيل الدخول</a></li>
+									<li class="sign-up-button">
+										<a href="#" data-toggle="modal" data-target="#sign-up-modal">
+											<p>إنشاء حساب</p>
+										</a>
+									</li>
+								</ul>
+								<a class="navbar-brand hidden-xs" href="https://www.print.sa"><img src="front-assets/images/logo.png" alt="Logo"></a>
+								<a class="navbar-brand visible-mobile-flex" href="#"><img src="front-assets/images/logo.png" alt="Logo"></a>
+							</div>
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right">
+									<li class="lang">
+										<div class="wrapper-dropdown-1" id="dd">
+											<span id="new_word">
+<!--
+                                                       <a onclick="changeLanguage('en');" class="hidden-xs">
+                              English
+                              </a>
+                              <a onclick="changeLanguage('en');" class="hidden-lg hidden-md hidden-sm">
+                              Eng
+                              </a>
+-->
+                                                    </span>
+										</div>
+									</li>
+									<!-- <li class="login-button"><a href="https://www.print.sa/login">تسجيل الدخول</a></li>
+                  <li class="sign-up-button"><a href="https://www.print.sa/signup"><p>إنشاء حساب</p></a></li> -->
+									<li class="login-button"><a href="#" data-toggle="modal" data-target="#login-modal">تسجيل الدخول</a></li>
+									<li class="sign-up-button">
+										<a href="#" data-toggle="modal" data-target="#sign-up-modal">
+											<p>إنشاء حساب</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- /.navbar-collapse -->
+						</nav>
+					</div>
+
+
+					<!--Before login ends here-->
+					<div class="col-lg-10 col-lg-offset-1 col-xs-12 first-screen-desc text-center">
+						<h1 class="element"></h1>
+						<p class="headline"> <b class="printly"># برنتلھا !</b> حدد ملفاتك ولاتشیل ھم السعر ولا التوصیل ولا الخصوصیة! </p>
+						<!--<p class="hidden-xs printer-pic">-->
+						<!--<img src="https://www.print.sa/front-assets/images/icon-print.png" alt="">-->
+						<!--</p>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER EOF -->
+	<script type="text/javascript">
+		function changeLanguage(lang) {
+			window.location.href = site_url + '/set_lang/' + lang;
+		}
+		$(document).ready(function() {
+			$('.headline').hover(function() {
+				$('.printly').toggleClass('animated shake');
+				$('.printly').toggleClass('design')
+			});
+		});
+
+	</script>
+
+	<script>
+		$(".btns-menu-open-close").on("click", function() {
+			$(this).parent(".navbar-header").toggleClass("menu-open");
+		});
+
+	</script>
+
+
+	<!-- CONTENT BEGIN -->
+	<!-- OUR PRODUCTS BEGIN -->
+	<div class="clearfix"></div>
+	<section class="container our-products" id="our-products">
+		<div class="row">
+			<div class="text-center">
+				<h2> ایش انواع الخدمات عند برنتلي؟ </h2>
+			</div>
+			<div class="col-lg-10 col-md-10 col-sm-10 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
+				<hr>
+			</div>
+			<!-- Pricing -->
+			<div class="col-md-4 col-xs-12">
+				<div class="pricing pricing-blue hover-effect">
+					<div class="pricing-head">
+						<h3><img src="front-assets/images/layer-3.png" alt="" width="150" height="150"></h3>
+						<h4 style="font-size: 1.8em">احجام الأورق
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							اوراق صغیرة - A4 - A5
+						</li>
+						<li>
+							اوراق متوسطة - A3 - A2
+						</li>
+						<li>
+							اوراق كبیرة - A1 - A0
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="pricing pricing-red hover-effect">
+					<div class="pricing-head">
+						<h3><img src="front-assets/images/layer-2.png" alt="" width="150" height="150"></h3>
+						<h4 style="font-size: 1.8em">انواع الأوراق
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							ورق عادي
+						</li>
+						<li>
+							ورق لاصق
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4 col-xs-12">
+				<div class="pricing pricing hover-effect">
+					<div class="pricing-head">
+						<h3><img src="front-assets/images/layer-1.png" alt="" width="150" height="150"></h3>
+						<h4 style="font-size: 1.8em">انواع التغلیف
+						</h4>
+					</div>
+					<ul class="pricing-content list-unstyled">
+						<li>
+							بدون تغليف (تدبيس فقط)
+						</li>
+						<li>
+							تغلیف سلسلة(سلك حدید)
+						</li>
+						<li>
+							تغلیف سلك بلاستیك
+						</li>
+						<li>
+							تغلیف لاصق
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--//End Pricing -->
+		</div>
+	</section>
+	<!-- OUR PRODUCT EOF -->
+
+	<!-- HOW IT WORKS BEGIN -->
+	<section class="container-fluid how-it-works">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<!-- HOW IT WORKS TITLE BEGIN -->
+					<div class="col-xs-12">
+						<h2 class="text-center"> كیف أطبع مع برنتلي؟</h2>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-sm-offset-0 col-md-offset-0 col-lg-offset-4 text-center">
+						<p>
+							يمكنك البدا بطباعة مستنداتك الان في 5 خطوات فقط! &nbsp; </p>
+						<hr>
+					</div>
+					<!-- HOW IT WORKS TITLE EOF -->
+					<div class="col-xs-12 how-it-works-steps-wrap text-center">
+						<div class="row">
+							<ul class="timeline">
+
+								<li class="timeline__item">
+									<div class="timeline__step">
+										<div class="timeline__step__marker timeline__step__marker--red"></div>
+									</div>
+									<div class="timeline__time">
+
+									</div>
+									<div class="timeline__content">
+										<div class="timeline__title">
+											خلیك برنتلي
+										</div>
+										<ul class="timeline__points">
+											<li>بكل بساطة وبخطوات سھلة اعمل حساب معانا وخلیك واحد من عائلة برنتلي</li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="timeline__item">
+									<div class="timeline__step">
+										<div class="timeline__step__marker timeline__step__marker--blue"></div>
+									</div>
+									<div class="timeline__time">
+
+									</div>
+									<div class="timeline__content">
+										<div class="timeline__title">
+											ارفعلي ملفاتك
+										</div>
+										<ul class="timeline__points">
+											<li>اختار كل الملفات اللي تحتاجھا و ارفعھا في سلة الطباعة الخاصة فیك.</li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="timeline__item">
+									<div class="timeline__step">
+										<div class="timeline__step__marker timeline__step__marker--salmon"></div>
+									</div>
+									<div class="timeline__time">
+
+									</div>
+									<div class="timeline__content">
+										<div class="timeline__title">
+											اختار انواع الطباعة
+										</div>
+										<ul class="timeline__points">
+											<li>لكل ملف حترفعو اختار نوع وحجم الورق، نوع التغلیف، ولاتنسى عدد النسخ.</li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="timeline__item">
+									<div class="timeline__step">
+										<div class="timeline__step__marker timeline__step__marker--blue"></div>
+									</div>
+									<div class="timeline__time">
+
+									</div>
+									<div class="timeline__content">
+										<div class="timeline__title">
+											اختار طریقة الدفع اللي تناسبك
+										</div>
+										<ul class="timeline__points">
+											<li>حابب تدفع كاش؟ او حابب تدفع اون لاین؟ كلو متاح مع برنتلي !</li>
+										</ul>
+									</div>
+								</li>
+
+								<li class="timeline__item">
+									<div class="timeline__step">
+										<div class="timeline__step__marker timeline__step__marker--red"></div>
+									</div>
+									<div class="timeline__time">
+
+									</div>
+									<div class="timeline__content">
+										<div class="timeline__title">
+											استلم یاسیدي
+										</div>
+										<ul class="timeline__points">
+											<li>بسرعة البرق حتكون ملفاتك بین ایدیك وحتوصلك لین مكانك</li>
+										</ul>
+									</div>
+								</li>
+
+							</ul>
+							<!--							</div>-->
+						</div>
+					</div>
+
+
+					<div class="col-xs-12 text-center">
+						<button data-toggle="modal" data-target="#login-modal" class="btn-art">   بدء الطباعة   </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- HOW IT WORKS EOF -->
+
+
+
+
+	<!-- PRICE CALCULATOR BEGIN -->
+	<div class="documentLoader"></div>
+	<section class="container-fluid price-calc">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+						<h2 class="text-center"> حاسبة الأسعار </h2>
+					</div>
+					<div class="col-lg-8 col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+						<div class="col-xs-12 calc-wrap">
+							<form class="form-inline">
+								<div class="form-group mrg-rht">
+									<select class="form-control">
+								  	  <option selected disabled>نوع الوثيقة</option>
+									  <option>أوراق حجم عادي</option>
+									  <option>أوراق حجم متوسط</option>
+									  <option>أوراق حجم كبير</option>
+									</select>
+								</div>
+								<div class="form-group mrg-rht">
+									<select class="form-control">
+										<option selected disabled>خيارات التجليد</option>
+										<option>بدون تغليف</option>
+										<option>تغليف سلك</option>
+									</select>
+								</div>
+								<div class="form-group mrg-rht">
+									<input class="form-control" type="number" placeholder="عدد الصفحات">
+								</div>
+								<div class="form-group mrg-rht">
+									<input class="form-control" type="number" placeholder="الكمية">
+								</div>
+								<div class="form-group mrg-rht">
+									<hr>
+								</div>
+								<button id="btnPrice" type="submit" class="btn btn-primary center-block price-btn"> السعر </button>
+							</form>
+							<br>
+							<div class="row">
+								<div class="col-md-4"></div>
+								<div class="col-md-4">
+									<div style="opacity: 0" class="alert alert-success price-currency" role="alert"> <strong>السعر</strong> 0.0 ريال</div>
+								</div>
+								<div class="col-md-4"></div>
+							</div>
+							<div class="mrg-rht col-xs-4 center-block col-md-offset-1">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- PRICE CALCULATOR EOF -->
+	<!-- TESTIMONIALS BEGIN -->
+	<section class="container-fluid testimonials">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-xs-12 col-ms-12 col-sm-12">
+						<h2 class="text-center"> خصم لعیونك من برنتلي؟ </h2>
+					</div>
+				</div>
+				<div class="row">
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#myCarousel" data-slide-to="1"></li>
+							<li data-target="#myCarousel" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner">
+							<div class="item active">
+								<img src="front-assets/images/sale.jpg" alt="Chania">
+								<div class="carousel-caption">
+									<h3>عروضات</h3>
+									<p> خصم علي اوراق صغیرة - A4 - A5</p>
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="front-assets/images/sale.jpg" alt="Chicago">
+								<div class="carousel-caption">
+									<h3>عروضات</h3>
+									<p> خصم علي اوراق صغیرة - A4 - A5</p>
+								</div>
+							</div>
+
+							<div class="item">
+								<img src="front-assets/images/sale.jpg" alt="New York">
+								<div class="carousel-caption">
+									<h3>عروضات</h3>
+									<p> خصم علي اوراق صغیرة - A4 - A5</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- TESTIMONIALS EOF -->
+
+
+
+	<!-- CONTENT EOF -->
+
+	<!-- FOOTER BEGIN -->
+	<input type="hidden" name="_token" value="KZgGaBbl2YDP2TOHdvrLSj2AG6XM4BX8xkBITBhR">
+	<style type="text/css">
+		.space-rights {
+			padding-right: 16%;
+		}
+
+		.footer-logo-section h3 {
+			font-weight: 700;
+			text-decoration: none;
+			font-size: 19px;
+		}
+
+		.iframe-footer {
+			width: 201px;
+			height: 95px;
+			overflow: hidden;
+		}
+
+		.iframe-footer iframe {
+			width: 201px;
+			height: 95px;
+		}
+
+		@media screen and (max-width: 767px) {
+			.footer-logo-section h3 {
+				padding: 0;
+			}
+			.iframe-footer {
+				width: unset;
+			}
+			.footer-logo-section h3 {
+				margin-top: 50px;
+			}
+		}
+
+	</style>
+	<footer id="footer" class="container-fluid footer">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-sm-4 col-xs-12">
+						<div class="footer-logo">
+							<img src="front-assets/images/logo.png" alt="Logo">
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 footer-internal-links">
+						<h3>
+							<p>روابط مهمة</p>
+						</h3>
+						<ul>
+							<li><a class="" href="#">     مین برنتلي؟   </a></li>
+							<li><a class="" href="#"> ایش قالو عن برنتلي؟ </a></li>
+							<li><a class="" href="#"> من وین استلم؟  </a></li>
+							<li><a class="" href="#">سياسة الخصوصية</a></li>
+
+							<li><a class="" href="#"> الشروط و الاحكام&nbsp;   </a></li>
+							<li><a class="" href="#"> كلم برنتلي </a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4 col-xs-12">
+						<div class="footer-print">
+							<h4> مكاني </h4>
+							<p> Print.sa,Al Sadhan 90 Sulaymaniyah, Musa Ibn Nusair Street, Riyadh </p>
+							<p> للدعم الفني أو الشكاوى، يمكنك التواصل معنا عبر ال واتساب 00000000000000000</p>
+
+							<ul class="footer-social">
+								<li><a target="blank" href="#"><i class="fa fa-facebook"></i> </a></li>
+								<li><a target="blank" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a target="blank" href="#"> <i class="fa fa-instagram"></i></a></li>
+							</ul>
+
+
+						</div>
+					</div>
+					<div class="col-xs-12 text-center footer-copy">
+
+						<span>© حقوق النشر 2018<a href="https://www.print.sa">  Printly</a> كل الحقوق محفوظة.</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Start of Zendesk Chat Script-->
+		<script type="text/javascript">
+			window.$zopim || (function(d, s) {
+				var z = $zopim = function(c) {
+						z._.push(c)
+					},
+					$ = z.s =
+					d.createElement(s),
+					e = d.getElementsByTagName(s)[0];
+				z.set = function(o) {
+					z.set.
+					_.push(o)
+				};
+				z._ = [];
+				z.set._ = [];
+				$.async = !0;
+				$.setAttribute("charset", "utf-8");
+				$.src = "https://v2.zopim.com/?5ExxvCTfSZbP9dD7IR6FmwiXXOuqJ4BM";
+				z.t = +new Date;
+				$.
+				type = "text/javascript";
+				e.parentNode.insertBefore($, e)
+			})(document, "script");
+
+		</script>
+		<!--End of Zendesk Chat Script-->
+	</footer>
+
+	<!-- FOOTER EOF -->
+
+	<a class="cd-top hidden-xs hidden-sm" href="#0">أعلى</a>
+	<script type="text/javascript" language="javascript" src="https://www.print.sa/front-assets/js/backtotop.js?v=11"></script>
+	<script type="text/javascript" language="javascript" src="https://www.print.sa/front-assets/js/wow.min.js?v=11"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/md5.js?v=11"></script>
+	<script src="https://www.print.sa/front-assets/js/custom_common.js?v=11" type="text/javascript"></script>
+	<script type="text/javascript">
+		var yes = " نعم&nbsp; ";
+		var no = " لا ";
+		var ok = "   حسنا   ";
+		var cancelp = "إلغاء";
+		var cancelp = "إلغاء";
+		var pconfirmp = " تؤكد ";
+		var warning = "تحذير";
+		var error = "تحذير";
+
+	</script>
+	<script type="text/javascript" src="https://www.print.sa/assets/alert/js/alert.js?v=11"></script>
+	<!--Sticky Menu-->
+	<script type="text/javascript">
+		$('.removeOnload').remove();
+		var pyour_one_stop_printshopp = " منصة برنتلي الإلكترونیة ";
+
+	</script>
+	<script type="text/javascript">
+		var pprice_not_available_for_selected_optionp = "   السعر غير متوفر للخيار المحدد.   ";
+		var warning = "تحذير";
+		var pprice_for_selected_folding_option_is_not_availablep = "   سعر خيار الطي المحدد غير متوفر.   ";
+		var _gsmTitle = "وزن الورق";
+		var paper_type = "نوع الورق";
+		var paper_options = " &nbsp;حدد خيارات الورق ";
+		var paper_size = " حجم الورق ";
+		var paper_weight = "وزن الورق";
+		var color = "اللون";
+		var side = "جانب";
+		var selectt = "تحديد";
+		var pprice_for_selected_binding_option_is_not_availablep = "   بدون تغليف مجانيه   ";
+
+	</script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/accounting.min.js?v=11"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/home-calculate-price.js?v=11"></script>
+	<script type="text/javascript">
+		var user_note_placeholder = "اكتب ملاحظاتك هنا (اختياري)";
+		var user_note_heading = "Note";
+		var user_note_information = "Add your note here";
+
+	</script>
+
+	<!--*-->
+	<!-- * -->
+	<!-- * -->
+	<!-- * -->
+	<!-- * -->
+	<!--   Home Slider Start Here-->
+	<script type="text/javascript">
+		var this_field_needs_to_be_a_valid_email = "يجب أن يكون هذا الحقل بريد إلكتروني صالحا.";
+		var error_occured_while_sending_request = "حدث خطأ أثناء إرسال الطلب";
+
+		$("#email_subscribe").keydown(function(e) {
+			if (e.which === 13) {
+				$("#btnSubscribe").trigger('click');
+			}
+		});
+		$(document).on("click", '#btnS	ubscribe', function() {
+			var email_subscribe = $('#email_subscribe').val();
+			var flag = 1;
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			$("#err_email_subscribe").html("");
+			$("#success_email_subscribe").html("");
+			$("#info_email_subscribe").html("");
+			if (email_subscribe == '') {
+				$("#err_email_subscribe").html(this_field_needs_to_be_a_valid_email);
+				$("#email_subscribe").focus();
+				$("#email_subscribe").keyup(function() {
+					$("#err_email_subscribe").html('');
+				});
+				flag = 0;
+			} else if (!filter.test(email_subscribe)) {
+				$("#err_email_subscribe").html(this_field_needs_to_be_a_valid_email);
+				$("#email_subscribe").focus();
+				$("#email_subscribe").keyup(function() {
+					$("#err_email_subscribe").html('');
+				});
+				flag = 0;
+			}
+			if (flag == 0) {
+				return false;
+			} else {
+				$.ajax({
+					headers: {
+						'X-CSRF-Token': $('input[name="_token"]').val()
+					},
+					dataType: 'json',
+					type: 'post',
+					url: SITE_URL + '/subscribe',
+					data: {
+						email: email_subscribe
+					},
+					beforeSend: function() {
+						/*console.log("loading ..........!");*/
+						showProcessingOverlay();
+					},
+					success: function(data) {
+						hideProcessingOverlay();
+						if (data.status == "success") {
+							$("#success_email_subscribe").html(data.msg);
+						} else if (data.status == "exist") {
+							$("#info_email_subscribe").html(data.msg);
+						} else {
+							$("#err_email_subscribe").html(data.msg);
+						}
+						setTimeout(function() {
+							$("#err_email_subscribe").html("");
+							$("#success_email_subscribe").html("");
+							$("#info_email_subscribe").html("");
+						}, 3000);
+						$('#email_subscribe').val("");
+					},
+					error: function() {
+						hideProcessingOverlay();
+						$('#email_subscribe').val("");
+						$("#err_email_subscribe").html(error_occured_while_sending_request);
+					}
+				});
+			}
+		});
+
+		function showProcessingOverlay() {
+			$("body").append("<div id='global_processing_overlay' class='loading'><div class='dot1'></div><div class='dot2'></div></div>");
+			$("#global_processing_overlay");
+		}
+
+		function hideProcessingOverlay() {
+			$("#global_processing_overlay").remove();
+		}
+
+	</script>
+	<!--   Home Slider End Here-->
+	<!--   Home Tab Start Here-->
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/responsivetabs.js?v=11"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(document).on('responsive-tabs.initialised', function(event, el) {});
+			$(document).on('responsive-tabs.change', function(event, el, newPanel) {});
+			$('[data-responsive-tabs]').responsivetabs({
+				initialised: function() {},
+				change: function(newPanel) {}
+			});
+		});
+
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			function checkImg(img) {
+				if (img.naturalHeight <= 1 && img.naturalWidth <= 1) {
+					/*undersize image here*/
+					img.src = "https://www.print.sa/uploads/default.png";
+				}
+			}
+			$("img").each(function() {
+				/* if image already loaded, we can check it's height now   */
+				if (this.complete) {
+					checkImg(this);
+				} else {
+					/* if not loaded yet, then set load and error handlers*/
+					$(this).load(function() {
+						checkImg(this);
+					}).error(function() {
+						/*img did not load correctly*/
+						/*set new .src here*/
+						this.src = "https://www.print.sa/uploads/default.png";
+					});
+				}
+			});
+		});
+
+	</script>
+	<!--Sticky Menu-->
+	<!-- Animation Start Here  -->
+	<script type="text/javascript">
+		$(document).ready(function() { /*  Animation */
+			wow = new WOW({
+				animateClass: 'animated',
+				offset: 100,
+				callback: function(box) { /*console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")*/ }
+			});
+			wow.init();
+			if ($("#moar").length > 0) {
+				document.getElementById('moar').onclick = function() {
+					var section = document.createElement('section');
+					section.className = 'section--purple wow fadeInDown';
+					this.parentNode.insertBefore(section, this);
+				};
+			}
+			// footer dropdown links start       
+			var min_applicable_width = 991;
+			$(document).ready(function() {
+				applyResponsiveSlideUp($(this).width(), min_applicable_width);
+			});
+
+			function applyResponsiveSlideUp(current_width, min_applicable_width) { /* Set For Initial Screen */
+				initResponsiveSlideUp(current_width, min_applicable_width); /* Listen Window Resize for further changes */
+				$(window).bind('resize', function() {
+					if ($(this).width() <= min_applicable_width) {
+						unbindResponsiveSlideup();
+						bindResponsiveSlideup();
+					} else {
+						unbindResponsiveSlideup();
+					}
+				});
+			}
+
+			function initResponsiveSlideUp(current_width, min_applicable_width) {
+				if (current_width <= min_applicable_width) {
+					unbindResponsiveSlideup();
+					bindResponsiveSlideup();
+				} else {
+					unbindResponsiveSlideup();
+				}
+			}
+
+			function bindResponsiveSlideup() {
+				$(".menu_name").hide();
+				$(".footer_heading").bind('click', function() {
+					var $ans = $(this).parent().find(".menu_name");
+					$ans.slideToggle();
+					$(".menu_name").not($ans).slideUp();
+					$('.menu_name').removeClass('active');
+					$('.footer_heading').not($(this)).removeClass('active');
+					$(this).toggleClass('active');
+					$(this).parent().find(".menu_name").toggleClass('active');
+				});
+			}
+
+			function unbindResponsiveSlideup() {
+				$(".footer_heading").unbind('click');
+				$(".menu_name").show();
+			} /*footer dropdown links end */
+		});
+
+	</script>
+	<!-- Min Top Menu Start Here  -->
+	<script type="text/javascript">
+		var doc_width = $(window).width();
+		if (doc_width < 1180) {
+			function openNav() {
+				document.getElementById("mySidenav").style.width = "250px";
+				$("body").css({
+					"margin-left": "250px",
+					"overflow-x": "hidden",
+					"transition": "margin-left .5s",
+					"position": "fixed"
+				});
+				$("#main").addClass("overlay");
+			}
+
+			function closeNav() {
+				document.getElementById("mySidenav").style.width = "0";
+				$("body").css({
+					"margin-left": "0px",
+					"transition": "margin-left .5s",
+					"position": "relative"
+				});
+				$("#main").removeClass("overlay");
+			}
+		}
+		/*//  Min Top Sub Menu Start Here*/
+		$(".min-menu > li > .drop-block").click(function() {
+			if (false == $(this).next().hasClass('menu-active')) {
+				$('.sub-menu > ul').removeClass('menu-active');
+			}
+			$(this).next().toggleClass('menu-active');
+			return false;
+		});
+		$("body").click(function() {
+			$('.sub-menu > ul').removeClass('menu-active');
+		});
+		/* Min Top Sub Menu End Here*/
+
+	</script>
+	<!-- Animation End Here  -->
+	<link href="front-assets/css/custom_loader.css" rel="stylesheet" type="text/css" />
+	<div ng-if="GLOBAL.request_inprogress" class="loading"></div>
+	<style type="text/css">
+		.footer-social li a {
+			color: #333 !important;
+		}
+
+	</style>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/slick.min.js?v=11"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/typed.min.js?v=11"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/custom.js?v=11"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/md5.js?v=11"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			if ($('body').has('#carousel-example-generic')) {
+				/*$('#carousel-example-generic').carousel({       interval: 4100   });  
+			     	$('#carousel-example-generic-one').carousel({       interval: 4100   });*/
+			}
+			$("#btnPrice").click(function() {
+				$(".price-currency").animate({
+					opacity: '1',
+				});
+			});
+
+		});
+
+	</script>
+</body>
+
+</html>

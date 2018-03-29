@@ -1,0 +1,293 @@
+// GENERAL
+.how-it-works, .our-products, .price-calc, .testimonials
+  h2
+    margin-bottom: 36px
+    font-size: 36px
+
+// OUR PRODUCTS BEGIN
+.our-products
+  padding: 100px 15px 120px 15px
+  p
+    font-size: 24px
+    font-weight: 300
+    line-height: 30px
+  &-block
+    min-height: 457px
+    border: 1px solid #e4e4e4
+    border-radius: 15px
+    margin-top: 30px
+    padding-bottom: 40px
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1)
+    ul
+      list-style: none
+      padding: 0
+      li
+        text-align: center
+        color: $gray-text-color
+        padding: 5px 40px
+        font-weight: 300
+        font-size: 16px
+        line-height: 20px
+    &-top
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+      height: 200px
+      background: #631383
+      border-top-left-radius: 15px
+      border-top-right-radius: 15px
+      margin-bottom: 25px
+      h3
+        color: $white
+        font-weight: 400
+        font-size: 20px
+
+// OUR PRODUCTS EOF
+
+// HOW IT WORKS BEGIN
+.how-it-works
+  padding: 50px 15px 60px 15px
+  background: url(../img/how-it-works-bg.png) no-repeat center / cover
+  p
+    font-size: 18px
+  &-steps-wrap
+    margin-bottom: 70px
+    position: relative
+    b
+      color: $black
+      font-size: 18px
+      margin-bottom: 5px
+      display: block
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 24px
+.how-it-works-line
+  position: absolute
+  width: 75%
+  height: 2px
+  background: $pink
+  top: 50.3%
+  left: 12.5%
+  &-boll
+    width: 20px
+    height: 20px
+    border-radius: 20px
+    background: $pink
+    margin: 15px auto
+    box-shadow: 0 0 20px rgba($pink, .4)
+
+// HOW IT WORKS EOF
+
+// VIDEO BEGIN
+.main-video-wrap
+  height: auto
+  position: relative
+  max-width: 100%
+  overflow: hidden
+  video
+    max-width: 100%
+    height: auto
+
+.video-play
+  position: absolute
+  width: 130px
+  height: 130px
+  background: rgba(255, 255, 255, .2)
+  border-radius: 130px
+  border: none
+  top: 50%
+  left: 50%
+  margin-top: -65px
+  margin-left: -65px
+  font-size: 65px
+  display: flex
+  align-items: center
+  justify-content: center
+  color: white
+  z-index: 2
+  padding: 0
+  &:focus
+    outline: none
+.video-stop
+  position: absolute
+  opacity: 0
+  top: 0
+  bottom: 0
+  width: 100%
+  z-index: 1
+  border: none
+  padding: 0
+// VIDEO EOF
+
+// PRICE CALCULATOR BEGIN
+.price-calc
+  background: url(../img/price-calc-bg.png)
+  background-size: cover
+  padding: 100px 15px 75px 15px
+.calc-wrap
+  background: $white
+  border: 1px solid #eaeaea
+  border-radius: 15px
+  box-shadow: 0 0 15px rgba(0, 0, 0, .1)
+  padding: 55px 55px 35px 25px
+  form
+    label + input[type=radio]
+      display: none
+    h4
+      margin-bottom: 15px
+.calc-row
+  margin-bottom: 20px
+  &-30 label
+    margin-left: 30px
+    &:last-child
+      margin-right: 0
+  &-25 label
+    margin-left: 25px
+    &:last-child
+      margin-left: 0
+  &-10 label
+    margin-right: 10px
+    &:last-child
+      margin-right: 0
+
+.calc-select
+  border: 1px solid $violet
+  padding: 10px 0 10px 20px
+  width: 290px
+  max-width: 100%
+  font-weight: 400
+
+.calc-price
+  margin-top: 0
+  span
+    display: inline-block
+    border: 1px solid $gray-border-color
+    padding: 9px 25px 6px 25px
+    font-size: 16px
+    color: $gray-text-color
+    margin-left: 15px
+
+// QUANTITY BEGIN
+.quantity
+  position: relative
+  display: flex
+  input
+    width: 68px
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+    margin: 0
+
+input[type=number]
+  -moz-appearance: textfield
+
+.quantity-field
+  height: 35px
+  border: 1px solid $gray-border-color
+  text-align: center
+.quantity-down, .quantity-up
+  width: 33px
+  background: none
+  font-size: 20px
+  cursor: pointer
+  user-select: none
+  -moz-user-select: none
+  -webkit-user-select: none
+  display: flex
+  align-items: center
+  justify-content: center
+  &:hover
+    border: 1px solid $violet
+  &:focus
+    outline: none
+  i
+    font-size: 15px
+    &:before
+      color: #7f7f7f
+
+// QUANTITY EOF
+
+// RADIO BEGIN
+.calc-radio
+  position: absolute
+  opacity: 0
+  & + label
+    font-weight: 300
+    padding: 6px 15px 6px 15px
+    position: relative
+    cursor: pointer
+    margin-bottom: 10px
+  &:disabled + label
+    border: 1px solid #d5d5d5
+    color: #646464
+  &:not(checked) + label
+    border: 1px solid $gray-border-color
+    color: $gray-text-color
+  &:checked + label
+    border: 1px solid $violet
+    background: $violet
+    color: $white
+    &:before
+      font-family: $icon-font
+      content: "\e5ca"
+      position: absolute
+      top: 0
+      right: 1px
+// RADIO EOF
+
+// PRICE CALCULATOR EOF
+
+// TESTIMONIALS BEGIN
+.testimonials
+  padding: 120px 15px 80px 15px
+  background: #f9f9f9
+  h4
+    font-weight: 400
+
+.testimonial-slider-block
+  min-height: 430px
+  border: 1px solid #e4e4e4
+  border-radius: 15px
+  margin-top: 75px
+  box-shadow: 0 0 15px rgba(0, 0, 0, .1)
+  padding: 100px 35px 30px
+  margin-bottom: 60px
+  position: relative
+  p
+    font-size: 16px
+    font-weight: 300
+    line-height: 24px
+
+.testimonial-img
+  position: absolute
+  background: url(../img/testimonial-img-bg.png) no-repeat center
+  top: -75px
+  left: 50%
+  margin-left: -72px
+.testimonial-line
+  height: 7px
+  width: 90%
+  position: absolute
+  bottom: -4px
+  left: 5%
+  border-radius: 10px
+  background: linear-gradient(90deg, $dark-blue, $gradient-pink 55%)
+
+// TESTIMONIALS EOF
+
+// MEDIA
+@media screen and (max-width: 1024px)
+  .our-products p
+    line-height: 28px
+  .how-it-works-line
+    top: 41.3%
+  .footer-logo
+    p
+      padding-right: 45px
+
+@media screen and (max-width: 768px)
+  .our-products
+    padding: 100px 15px 80px 15px

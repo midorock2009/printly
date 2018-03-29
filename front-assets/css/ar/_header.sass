@@ -1,0 +1,324 @@
+// HEADER BEGIN
+.header
+  min-height: 90px
+  background: linear-gradient(90deg, $dark-blue, $gradient-pink)
+.first-screen
+  width: 100%
+  overflow: hidden
+  align-items: center
+  justify-content: center
+  //background-size: 300% 300%
+  //background-image: linear-gradient(135deg, #151680 0%, #3d1481 25%, #881183 50%, #b12482 100%)
+  //animation: background-shift 7s ease infinite
+  background: url(../img/header-bg.jpg)
+  background-size: cover
+  background-position: center
+  &-desc
+    color: $white
+    margin-top: 13.5vw
+    h1
+      font-weight: bold
+      font-size: 3.1vw
+      margin-bottom: 25px
+    p
+      opacity: 0
+      padding: 0 50px
+      font-size: 24px
+      line-height: 35px
+      color: $white
+    img
+      height: 440px
+      margin-top: 70px
+
+.header-overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  width: 100%
+  background: rgba(0, 0, 0, .4)
+
+
+@keyframes background-shift
+  0%
+    background-position: 0 50%
+  50%
+    background-position: 100% 50%
+  100%
+    background-position: 0 50%
+
+.scroll-down
+  position: absolute
+  z-index: 1
+  left: 50%
+  bottom: 3vh
+  color: $white
+  transform: translateX(-50%)
+  opacity: 0
+  a
+    color: $white
+    display: flex
+    width: 65px
+    height: 65px
+    border-radius: 100%
+    border: 0 solid rgba(255, 255, 255, 0.15)
+    align-items: center
+    justify-content: center
+    animation: pulse-one 2s infinite
+    &:hover
+      text-decoration: none
+    &:before
+      position: absolute
+      content: " "
+      top: 50%
+      right: 50%
+      width: 46px
+      height: 46px
+      border: 3px solid rgba(#fff, .15)
+      border-radius: 100%
+      margin-right: -23px
+      margin-top: -23px
+      animation: pulse-two 2s infinite
+    i
+      font-size: 15px
+      top: 23px
+      position: absolute
+      animation: down-up .8s infinite
+      left: 50%
+      margin-left: -3px
+
+
+@keyframes pulse-one
+  0%
+    border: 1px solid rgba(#fff, 0)
+  25%
+    border: 1px solid rgba(#fff, .15)
+  50%
+    border: 1px solid rgba(#fff, .5)
+  100%
+    border: 1px solid rgba(#fff, 0)
+
+@keyframes pulse-two
+  0%
+    border: 3px solid rgba(#fff, 0)
+  50%
+    border: 3px solid rgba(#fff, .5)
+  75%
+    border: 3px solid rgba(#fff, .15)
+  100%
+    border: 3px solid rgba(#fff, 0)
+
+@keyframes down-up
+  0%
+    top: 23px
+  50%
+    top: 27px
+  100%
+    top: 23px
+
+.header-wave-one
+  background: url(../img/header-wave2-bg-test.png) repeat-x
+  position: absolute
+  bottom: -556px
+  left: 0
+  width: 100%
+  height: 696px
+  background-position: 50% 0
+  animation: wave-one 7s
+
+.header-wave-two
+  background: url(../img/header-wave2-bg-test.png) repeat-x
+  position: absolute
+  bottom: -556px
+  left: 0
+  width: 100%
+  height: 595px
+  background-position: 64% 0
+  animation: wave-two 5s
+
+@keyframes wave-one
+  0%
+    background-position: 100% 0
+  100%
+    background-position: 50% 0
+@keyframes wave-two
+  0%
+    background-position: 0 0
+  100%
+    background-position: 64% 0
+
+// HEADER MENU BEGIN
+.navbar-header
+  float: right
+
+.nav>li>a:focus, .nav>li>a:hover
+  background: none
+
+.navbar-brand
+  height: auto
+  img
+    height: 70px
+    width: auto
+.navbar-art
+  margin-bottom: 0
+  & .navbar-nav
+    height: 100px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    float: left !important
+    li
+      &.dropdown
+        span
+          font-size: 13px
+          margin-left: 8px
+        i[class*=user]
+          background: $white
+          border: 1px solid $white
+          color: $gray-text-color
+          padding: 4px
+          border-radius: 100%
+          margin-right: 13px
+          font-size: 15px
+      a
+        border-radius: 30px
+        color: $white
+        width: 100%
+        transition: .3s
+        font-weight: 300
+        i
+          font-size: 27px
+          &[class*=cart]
+            position: relative
+            span
+              position: absolute
+              font-size: 12px
+              background: $violet
+              border: 1px solid $white
+              padding: 3px
+              top: -5px
+              right: -5px
+              border-radius: 100%
+              width: 15px
+              height: 15px
+              display: flex
+              align-items: center
+              justify-content: center
+
+.navbar-toggle .icon-bar
+  background: $white
+  width: 28px
+  height: 3px
+.navbar-toggle
+  margin-top: 30px
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover
+  background: none
+  border: none
+
+.navbar-art .dropdown-menu
+  padding-top: 0
+  padding-bottom: 0
+  border-radius: 0
+  li
+    margin-left: 0
+    &:hover
+      background: $violet
+    a
+      display: flex
+      align-items: center
+      color: $gray-text-color
+      padding: 8px 20px
+      &:hover
+        background: none
+        color: $white
+      i
+        font-size: 18px
+        margin-left: 6px
+        &[class*=logout]
+          font-size: 14px
+          margin-left: 4px
+
+.navbar-art .login-button
+  a
+    padding: 13px 35px
+    height: 45px
+    background: #550a6b
+    &:hover
+      background: $white
+      color: $violet
+
+.navbar-art .sign-up-button
+  a
+    padding: 13px 35px
+    height: 45px
+    color: $white !important
+    border: 1px solid $white
+    //margin-right: 15px
+    &:hover
+      background: $white
+      box-sizing: border-box
+      color: #151680 !important
+      border: 1px solid $white
+
+.mobile-lang
+  height: 19px
+
+// HEADER MENU EOF
+// HEADER EOF
+
+@media screen and (max-width: 1024px)
+  .first-screen-desc
+    margin-top: 2.5vw
+    h1
+      font-size: 5vw
+    p
+      font-size: 16px
+      line-height: 28px
+  .typed-cursor
+    font-size: 5vw
+  .first-screen-desc img
+    height: 310px
+    margin-top: 25px
+
+@media screen and (max-width: 991px)
+  .first-screen-desc h1
+    font-size: 4vw
+
+@media screen and (max-width: 768px)
+  .first-screen-desc
+    margin-top: 11.5vw
+    h1
+      font-size: 5.5vw
+    img
+      margin-top: 70px
+
+@media screen and (max-width: 768px - 1)
+  .first-screen-desc
+    h1
+      font-size: 38px
+    p
+      font-size: 14px
+      line-height: 24px
+  .typed-cursor
+    display: none
+  .login-left-side
+    padding: 70px 30px !important
+  .navbar-art .sign-up-button
+    padding-right: 30px
+    padding-left: 10px
+
+@media screen and (max-width: 480px)
+  .navbar-brand
+    padding-right: 0
+  .navbar-art .sign-up-button
+    padding-right: 15px
+    padding-left: 10px
+  .navbar-art .login-button a, .navbar-art .sign-up-button a
+    height: 40px
+    padding: 10px 20px
+    font-size: 14px !important
+  .close-login-modal
+    color: $black
+    font-size: 22px
