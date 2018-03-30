@@ -271,8 +271,8 @@
 									<li><a href="#">عن برنتلي</a></li>
 									<li><a href="#">وين استلم</a></li>
 									<li><a href="#">كلم برنتلي</a></li>
-									<li><a href="#"> سياسة الخصوصية</a></li>
-									<li><a href="#"> شروط والاحكام</a></li>
+									<li><a href="privacy.html"> سياسة الخصوصية</a></li>
+									<li class="active-terms"><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
 									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
@@ -321,169 +321,57 @@
 			position: relative;
 		}
 
-		/*.min-menu li {
-        display: none;
-    }
-    
-    .min-menu li.lang,    
-    .min-menu li.dash-show {
-        display: inline-block;
-    }
-    
-    #dd .dropdown li {
-        display: block;
-    }*/
-
 	</style>
-	<!-- <div class="banner-block-inner help-banner-block">
-    <div class="about-overlay"></div>
-    <div class="container main-content-head">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="page-head-block">
-                    طلباتي                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="bread-cum-block">
-                    <ul>
-
-                                                <li><a href="https://www.print.sa/user/dashboard/">لوحة القيادة</a></li>
-                        
-                        <li>طلباتي</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 	<div class="dash-main-block">
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="container">
 
-					<div class="table-block-dash my-order-block-table">
-						<div class="left-bar-head get-uploading table-bordered">طلباتي</div>
-						<div class="table-responsive">
-
-
-							<table id="mytable" class="table table-bordred table-striped">
-
-								<thead>
-
-									<th><a class="icon" href="javascript:void(0);"> رقم&nbsp; الطلب </a></th>
-									<th style="text-align: center;"><a class="icon" href="javascript:void(0);">حالة الطباعة</a></th>
-									<th><a class="icon" href="javascript:void(0);"> نوع التوصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);">كمية</a></th>
-									<th><a class="icon" href="javascript:void(0);">مجموع</a></th>
-									<th><a class="icon" href="javascript:void(0);"> تاريخ </a></th>
-									<th><a class="icon" href="javascript:void(0);"> التفاصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);"> حذف </a></th>
-								</thead>
-								<tbody>
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>Jarir BookStore</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>ش ١٨١ جمال عبد الناصر</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-
-
-
-								</tbody>
-
-							</table>
-
-							<div class="clearfix"></div>
-
-						</div>
-
-					</div>
-				</div>
-				<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">تعديل علي طلبك</h4>
-							</div>
-							<div class="modal-body">
-								<div class="form-group">
-									<input class="form-control " type="text" placeholder="الكمية">
-								</div>
-							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> تحديث</button>
-							</div>
-						</div>
-						<!-- /.modal-content -->
-					</div>
-					<!-- /.modal-dialog -->
-				</div>
-
-
-
-				<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">حذف هذا الطلب</h4>
-							</div>
-							<div class="modal-body">
-
-								<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> هل انت متآكد من حذف هذا الطلب ؟</div>
-
-							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> نعم</button>
-								<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> لا</button>
-							</div>
-						</div>
-						<!-- /.modal-content -->
-					</div>
-				</div>
+			<div class="privacy-point-head">
+				<h2 class="text-center">الشروط والأحكام</h2>
+			</div>
+			<div class="privacy-point-content">
+				<p><span style="font-family: arial, helvetica, sans-serif;">الشروط والأحكام العامة:</span><br /><br /></p>
+				<ul>
+					<li><span style="font-family: arial, helvetica, sans-serif;">باستخدام موقع منصة إطبع فأنت توافق على الالتزام بهذه الشروط والأحكام، وفي حال عدم موافقتك على الشروط والأحكام يتعين عليك عدم استخدام الموقع.</span></li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">نحتفظ بحقنا بتغيير الشروط والأحكام من وقت لآخر وعليه يتعين عليك الاطلاع على هذه الشروط والأحكام دوريا، ولا يتوجب علينا الاتصال بك أو إعلامك بأي تغييرات تم إجراؤها على الشروط والأحكام.</span></li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">كجزء من التزامنا بجعل موقع منصة إطبع مكان ترغب في زيارته باستمرار فإننا نرحب بكافة تعليقاتك على أي من السياسات أو القواعد التي ندرجها أدناه.</span><br /><br /></li>
+				</ul>
+				<p><span style="font-family: arial, helvetica, sans-serif;">1- الإستخدام المشروع.</span></p>
+				<ul>
+					<li><span style="font-family: arial, helvetica, sans-serif;">تقر وتتعهد بأنك قادر على استخدام الموقع حسب ما هو منصوص عليه</span></li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">تقر بأن أي إستخدام تقوم به لموقع منصة إطبع سيكون حسب ما هو منصوص عليه في الشروط التالية:</span>
+						<ul>
+							<li><span style="font-family: arial, helvetica, sans-serif;">لن تقوم بنسخ، تحميل، إعادة إنتاج، إعادة نشر، بث، أو إرسال بأي شكل من الأشكال أي من المواد التي توفرها منصة إطبع باستثناء بياناتك الشخصية فقط.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">تلتزم بالقواعد المحددة التي تنطبق على أي ترويج تشارك فيه بأي شكل من خلال منصة إطبع.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">تلتزم بعدم القيام بأي شيء يكون من شأنه التأثير على تشغيل أو أمنمنصة إطبع أو يتسبب في إنزعاج غير</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">منطقي أو إساءة أو تعطيل آلي من المستخدمين الآخرين أو العاملين لدينا.</span></li>
+						</ul>
+					</li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">توافق على الإمتناع عن الأمور التالية (سواء قمت أنت بها شخصيا أو من خلال طرف آخر) </span><br />
+						<ul>
+							<li><span style="font-family: arial, helvetica, sans-serif;">استخدام عملية آلية لمعالجة، مراقبة، نسخ، استخراج أي صفحات موجودة على منصة إطبع، أو أي معلومات، أو محتوى أو بيانات يحتويها أو يتم الوصول إليها عن طريق منصة إطبع، دون الحصول على الموافقة الخطية المسبقة من قبلنا.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">استخدام عملية آلية لتجميع أو دمج المعلومات، أو المحتوى أو البيانات التي يحتويها أو يمكن الوصول إليها عن طريق منصة إطبع من المعلومات، أو المواد أو البيانات التي يتم الوصول إليها عن طريق المنصة.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">استخدام أي عملية آلية أو المحاولة للتدخل في طريقة العمل السليمة لمنصة إطبع.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">القيام بأي فعل يكون من شأنه فرض حمل كبير بشكل غير منطقي أو غير متناسب مع البنية التحتية المتاحة أو النطاق الترددي لمنصة إطبع.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">تطبيق هندسة عكسية، أو جمع عكسي، أو تفكيك، أو أي عمل آخر من يكون شأنه اكتشاف رمز مصدري أو غيره من الصيغ الحسابية أو المعالجات فيما يخص برنامج الحاسوب المستخدم في البنية التحتية والعمليات المتعلقة بمنصة إطبع.</span></li>
+							<li><span style="font-family: arial, helvetica, sans-serif;">نسخ، إعادة إنتاج، تغيير، تعديل، اشتقاق أعمال، أو إقامة عرض عام، لأي جزء من محتوى منصة إطبع دون الموافقة الخطية المسبقة من قبلنا.</span></li>
+						</ul>
+					</li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">من أجل الوصول إلى منصة إطبع، ستحتاج إلى الوصول إلى الإنترنت. تتحمل مسؤولية أي اتصال، أو خدمة أو رسوم مرتبطة بالوصول إلى الإنترنت وتوفير كافة المعدات اللازمة لتمكينك من الاتصال بالإنترنت.</span></li>
+					<li><span style="font-family: arial, helvetica, sans-serif;">نظراً لمحدودية قدرة كافة أجهزة الخادم (سيرفر) واستخدامها من قبل العديد من الأشخاص في الوقت نفسه، فإنك تلتزم بعدم استخدام منصة إطبع بأي شكل من الأشكال التي تؤدي إلى تخريب أو تتجاوز قدرة تحمل أجهزة الخادم (سيرفر) لدينا أو أي شبكة مرتبطة بأي من خوادمنا، كما يجب أن تمتنع عن استخدام منصة إطبع بأي شكل من الأشكال يؤدي بالتدخل في استخدام أي طرف آخر لمنصة إطبع على نحو يخالف، أو من المحتمل أن يخالف، أي قوانين مرعية ومطبقة، أو حقوق أو استحقاقات قانونية إلى طرف آخر وذلك طبقا لكافة القوانين المطبقة.</span></li>
+				</ul>
 			</div>
 		</div>
+
+
 	</div>
-</div>
-	</div>
+
+
+
+
+
+
+
+
 	<!-- FOOTER BEGIN -->
 	<input type="hidden" name="_token" value="zTF8v3Wdcro1N3cEwjRSBOpHOjCfGEGMirsWpZv0">
 	<style type="text/css">

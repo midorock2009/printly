@@ -227,7 +227,7 @@
 		<!--<div class="header-wave-one"></div>-->
 
 		<!--<div class="header-wave-two"></div>-->
-		<div class="header-overlay"></div>
+		<div class="header-overlay" style="height: 108px"></div>
 		<div class="row">
 			<div class="container">
 				<div class="row">
@@ -268,11 +268,11 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right special" style="float:right !important">
 									<li><a href="#">مين برنتلي</a></li>
-									<li><a href="#">عن برنتلي</a></li>
-									<li><a href="#">وين استلم</a></li>
-									<li><a href="#">كلم برنتلي</a></li>
-									<li><a href="#"> سياسة الخصوصية</a></li>
-									<li><a href="#"> شروط والاحكام</a></li>
+									<li class="active-terms"><a href="about-us.html">مين برنتلي</a></li>
+									<li><a href="pick_up_locations.html">وين استلم</a></li>
+									<li><a href="contact-us.html">كلم برنتلي</a></li>
+									<li><a href="privacy.html"> سياسة الخصوصية</a></li>
+									<li><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
 									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
@@ -321,169 +321,122 @@
 			position: relative;
 		}
 
-		/*.min-menu li {
-        display: none;
-    }
-    
-    .min-menu li.lang,    
-    .min-menu li.dash-show {
-        display: inline-block;
-    }
-    
-    #dd .dropdown li {
-        display: block;
-    }*/
+		.form-control {
+			height: 50px;
+		}
 
 	</style>
-	<!-- <div class="banner-block-inner help-banner-block">
-    <div class="about-overlay"></div>
-    <div class="container main-content-head">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="page-head-block">
-                    طلباتي                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="bread-cum-block">
-                    <ul>
-
-                                                <li><a href="https://www.print.sa/user/dashboard/">لوحة القيادة</a></li>
-                        
-                        <li>طلباتي</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 	<div class="dash-main-block">
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-
-					<div class="table-block-dash my-order-block-table">
-						<div class="left-bar-head get-uploading table-bordered">طلباتي</div>
-						<div class="table-responsive">
 
 
-							<table id="mytable" class="table table-bordred table-striped">
-
-								<thead>
-
-									<th><a class="icon" href="javascript:void(0);"> رقم&nbsp; الطلب </a></th>
-									<th style="text-align: center;"><a class="icon" href="javascript:void(0);">حالة الطباعة</a></th>
-									<th><a class="icon" href="javascript:void(0);"> نوع التوصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);">كمية</a></th>
-									<th><a class="icon" href="javascript:void(0);">مجموع</a></th>
-									<th><a class="icon" href="javascript:void(0);"> تاريخ </a></th>
-									<th><a class="icon" href="javascript:void(0);"> التفاصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);"> حذف </a></th>
-								</thead>
-								<tbody>
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>Jarir BookStore</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>ش ١٨١ جمال عبد الناصر</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-
-
-
-								</tbody>
-
-							</table>
-
-							<div class="clearfix"></div>
-
-						</div>
-
-					</div>
-				</div>
-				<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">تعديل علي طلبك</h4>
-							</div>
-							<div class="modal-body">
-								<div class="form-group">
-									<input class="form-control " type="text" placeholder="الكمية">
+				<div class="aboutus-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-5 col-sm-6 col-xs-12">
+								<div class="aboutus">
+									<h2 class="aboutus-title">مين برنتلي؟ </h2>
+									<p class="aboutus-text">برنتلي هي منصة الكترونية مخصصة عشان تقدملك خدمات الطباعة بشتى أنواع الورق وأحجامها، بأسعار منافسة و توفير خدمة التوصيل لين مكانك.</p>
+									<p class="aboutus-text"> وُجدت برنتلي عشان تحل مشكلة الزحمة عند المكتبات، و ضياع الوقت في انتظار الطباعة، ومشكلة الحبر والأسعار العالية.
+									</p>
 								</div>
 							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> تحديث</button>
+							<div class="col-md-3 col-sm-6 col-xs-12">
+								<div class="aboutus-banner">
+									<img src="http://themeinnovation.com/demo2/html/build-up/img/home1/about1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-5 col-sm-6 col-xs-12">
+								<div class="feature">
+									<div class="feature-box">
+										<div class="clearfix">
+											<div class="iconset">
+												<span class="glyphicon glyphicon-cog icon"></span>
+											</div>
+											<div class="feature-content">
+												<h4>جودة عالية</h4>
+												<p>اهتمامنا في طباعة الملفات بجودة عالية وذلك بإستخدام أفضل الطابعات والأدوات المكتبية.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="clearfix">
+											<div class="iconset">
+												<span class="glyphicon glyphicon-cog icon"></span>
+											</div>
+											<div class="feature-content">
+												<h4>سعر منافس</h4>
+												<p>نحرص على أن نتميز بسعر منافس يناسب جميع الفئات من الطلاب والشركات والجهات الآخرى.</p>
+											</div>
+										</div>
+									</div>
+									<div class="feature-box">
+										<div class="clearfix">
+											<div class="iconset">
+												<span class="glyphicon glyphicon-cog icon"></span>
+											</div>
+											<div class="feature-content">
+												<h4> خدمتكم</h4>
+												<p>نحرص على خدمتكم واستلام طلباتكم طوال الوقت من خلال موقعنا الإلكتروني</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<!-- /.modal-content -->
 					</div>
-					<!-- /.modal-dialog -->
 				</div>
 
 
-
-				<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">حذف هذا الطلب</h4>
-							</div>
-							<div class="modal-body">
-
-								<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> هل انت متآكد من حذف هذا الطلب ؟</div>
-
-							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> نعم</button>
-								<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> لا</button>
-							</div>
-						</div>
-						<!-- /.modal-content -->
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
-</div>
-	</div>
+	<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+	<script type="text/javascript">
+		jQuery(function($) {
+			function init_map1() {
+				var myLocation = new google.maps.LatLng(38.885516, -77.09327200000001);
+				var mapOptions = {
+					center: myLocation,
+					zoom: 16
+				};
+				var marker = new google.maps.Marker({
+					position: myLocation,
+					title: "Property Location"
+				});
+				var map = new google.maps.Map(document.getElementById("map1"),
+					mapOptions);
+				marker.setMap(map);
+			}
+			init_map1();
+		});
+
+	</script>
+
+	<style>
+		.map {
+			min-width: 300px;
+			min-height: 300px;
+			width: 100%;
+			height: 100%;
+		}
+
+		.header {
+			background-color: #F5F5F5;
+			color: #36A0FF;
+			height: 70px;
+			font-size: 27px;
+			padding: 10px;
+		}
+
+	</style>
+
+
+
+
 	<!-- FOOTER BEGIN -->
 	<input type="hidden" name="_token" value="zTF8v3Wdcro1N3cEwjRSBOpHOjCfGEGMirsWpZv0">
 	<style type="text/css">

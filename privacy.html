@@ -268,11 +268,11 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-right special" style="float:right !important">
 									<li><a href="#">مين برنتلي</a></li>
-									<li><a href="#">عن برنتلي</a></li>
-									<li><a href="#">وين استلم</a></li>
-									<li><a href="#">كلم برنتلي</a></li>
-									<li><a href="#"> سياسة الخصوصية</a></li>
-									<li><a href="#"> شروط والاحكام</a></li>
+									<li><a href="about-us.html">عن برنتلي</a></li>
+									<li><a href="pick_up_locations.html">وين استلم</a></li>
+									<li><a href="contact-us.html">كلم برنتلي</a></li>
+									<li class="active-terms"><a href="privacy.html"> سياسة الخصوصية</a></li>
+									<li><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
 									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
@@ -321,169 +321,59 @@
 			position: relative;
 		}
 
-		/*.min-menu li {
-        display: none;
-    }
-    
-    .min-menu li.lang,    
-    .min-menu li.dash-show {
-        display: inline-block;
-    }
-    
-    #dd .dropdown li {
-        display: block;
-    }*/
-
 	</style>
-	<!-- <div class="banner-block-inner help-banner-block">
-    <div class="about-overlay"></div>
-    <div class="container main-content-head">
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="page-head-block">
-                    طلباتي                </div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-lg-6">
-                <div class="bread-cum-block">
-                    <ul>
-
-                                                <li><a href="https://www.print.sa/user/dashboard/">لوحة القيادة</a></li>
-                        
-                        <li>طلباتي</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
 	<div class="dash-main-block">
-<div class="container">
-	<div class="row">
-		<div class="col-xs-12">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="container">
+			<div class="container">
 
-					<div class="table-block-dash my-order-block-table">
-						<div class="left-bar-head get-uploading table-bordered">طلباتي</div>
-						<div class="table-responsive">
-
-
-							<table id="mytable" class="table table-bordred table-striped">
-
-								<thead>
-
-									<th><a class="icon" href="javascript:void(0);"> رقم&nbsp; الطلب </a></th>
-									<th style="text-align: center;"><a class="icon" href="javascript:void(0);">حالة الطباعة</a></th>
-									<th><a class="icon" href="javascript:void(0);"> نوع التوصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);">كمية</a></th>
-									<th><a class="icon" href="javascript:void(0);">مجموع</a></th>
-									<th><a class="icon" href="javascript:void(0);"> تاريخ </a></th>
-									<th><a class="icon" href="javascript:void(0);"> التفاصيل </a></th>
-									<th><a class="icon" href="javascript:void(0);"> حذف </a></th>
-								</thead>
-								<tbody>
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>Jarir BookStore</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-									<tr>
-										<td>011234</td>
-										<td>تحت التنفيذ</td>
-										<td>ش ١٨١ جمال عبد الناصر</td>
-										<td>4</td>
-										<td>31.3</td>
-										<td>Dec 22, 1994</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="التفاصيل">
-												<a href="details.html">
-															<button class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-align-right"></span></button>
-														</a>
-											</p>
-										</td>
-										<td>
-											<p data-placement="bottom" data-toggle="tooltip" title="حذف"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete"><span class="glyphicon glyphicon-trash"></span></button></p>
-										</td>
-									</tr>
-
-
-
-
-
-								</tbody>
-
-							</table>
-
-							<div class="clearfix"></div>
-
-						</div>
-
-					</div>
+				<div class="privacy-point-head">
+					<h2 class="text-center">سياسة الخصوصية</h2>
 				</div>
-				<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">تعديل علي طلبك</h4>
-							</div>
-							<div class="modal-body">
-								<div class="form-group">
-									<input class="form-control " type="text" placeholder="الكمية">
-								</div>
-							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span class="glyphicon glyphicon-ok-sign"></span> تحديث</button>
-							</div>
-						</div>
-						<!-- /.modal-content -->
-					</div>
-					<!-- /.modal-dialog -->
-				</div>
-
-
-
-				<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-								<h4 class="modal-title custom_align" id="Heading">حذف هذا الطلب</h4>
-							</div>
-							<div class="modal-body">
-
-								<div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> هل انت متآكد من حذف هذا الطلب ؟</div>
-
-							</div>
-							<div class="modal-footer ">
-								<button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok-sign"></span> نعم</button>
-								<button type="button" class="btn btn-default" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> لا</button>
-							</div>
-						</div>
-						<!-- /.modal-content -->
-					</div>
+				<div class="privacy-point-content">
+					<ul>
+						<li><span style="font-family: arial, helvetica, sans-serif;">تقر بان خصوصيتك وحماية معلوماتك الشخصية أمر مهم بالنسبة لك وأنك ملتزم بحماية خصوصيتك.<br /></span></li>
+						<li><span style="font-family: arial, helvetica, sans-serif;">يرجى قراءه هذه السياسة بعناية. باستخدام موقعنا، فأنك تعني موافقتك على هذه السياسة.<br /><br /></span></li>
+						<li><span style="font-family: arial, helvetica, sans-serif;"><strong>وترد أدناه سياسة الخصوصية الكاملة لدينا، ولكن هناك عدد قليل من النقاط الرئيسية</strong><strong>:<br /><br /></strong></span>
+							<ul>
+								<li><span style="font-family: arial, helvetica, sans-serif;">لن نقوم ببيع أو تأجير أو مشاركه معلوماتك الشخصية مع اي شركات أخرى، باستثناء أولئك الذين يحتاجونها لمساعدتنا في خدمتك (مثل توفير عنوانك البريدي لطرف ثالث لأغراض التسليم).<br /><br /></span></li>
+								<li><span style="font-family: arial, helvetica, sans-serif;">عند إرسال اي نموذج أو تحميل اي وثيقة إلى موقعنا، ونحن نستخدم طبقه أمنه. تحمي تقنيه الطبقة الأمنه المعلومات الخاصة بك، باستخدام كل من مصادقه الخادم وتشفير البيانات، مما يضمن ان تكون البيانات أمنه وأمنه ومتوفرة فقط للمستخدمين المسجلين في مؤسستك.<br /><br /></span></li>
+							</ul>
+						</li>
+						<li><span style="font-family: arial, helvetica, sans-serif;"><strong>ما هي المعلومات التي سيتم جمعها عن طريق منصة إطبع؟<br /><br /></strong> </span>
+							<ul>
+								<li><span style="font-family: arial, helvetica, sans-serif;">ومن أجل استخدام الخدمات، يطلب منك تزويدنا بعنوان بريد الكتروني وكلمه مرور فريدة. بالإضافة إلى ذلك، عند وضع أمر بموقعنا، يطلب منك تقديم معلومات شخصيه ومعلومات أخرى مثل اسمك، ورقم الهاتف، والعنوان، ومعلومات الدفع (بما في ذلك معلومات بطاقة الائتمان)، ومعلومات الشحن (مثل عناوين التسليم).<br /><br /></span></li>
+							</ul>
+						</li>
+						<li><span style="font-family: arial, helvetica, sans-serif;"><strong>كيفية استخدام المعلومات التي تم جمعها؟<br /><br /></strong></span>
+							<ul>
+								<li><span style="font-family: arial, helvetica, sans-serif;">يتم استخدام المعلومات التي تم جمعها منك عند وضع أمر علي موقعنا للاتصال بك في المسار العادي للعمل (على سبيل المثال، رسائل البريد الكتروني تأكيد). في كل مره تقوم فيها بوضع أمر، سنرسل لك تأكيدا بخصوص حاله طلبك باستخدام عنوان البريد الكتروني الذي قمت بتوفيره. كما سنرسل لك بريدا الكترونيا عندما يتم شحن طلبك. وبمجرد تقديم طلبك إلى الناقل، توفر كافة خدمات التسليم والناقل معلومات التعقب.<br /><br /></span></li>
+								<li><span style="font-family: arial, helvetica, sans-serif;">لا تشارك الطباعة إيه معلومات تعريف شخصيه مع موفري الجهات الأخرى. بالإضافة إلى ذلك، لن تستخدم الطباعة أو تشارك معلوماتك الشخصية بطريقه تختلف عما هو موضح في سياسة الخصوصية هذه دون موافقتك المسبقة.<br /><br /></span></li>
+								<li><span style="font-family: arial, helvetica, sans-serif;">عند الكشف عن معلوماتك، تحتفظ الطباعة بالحق في الإفصاح عن المعلومات أو المستندات المتعلقة بها أو التي تقدمها لك كما نري ان من الضروري حماية أنظمتنا أو أعمالنا، بما في ذلك على سبيل المثال لا الحصر الامتثال للأمر القضائي أو المسؤولين عن إنفاذ القانون. وعلى وجه التحديد، ولكن بدون قيود، نحتفظ بالحق في الإفصاح عن هذه المعلومات أو الوثائق في الحالات التالية: أنت تنتهك احكامنا وشروطنا أو غيرها من المبادئ التوجيهية المنشورة؛ أنت تشارك (أو يشتبه بشكل معقول في الأخذ بالمكافئات) في اي نشاط مخالف أو غير قانوني، حتى بدون مذكره إحضار، أو أمر قضائي، أو أمر آخر من المحكمة؛ استجابة للأوامر القضائية والحكومية، والاستدعاءات المدنية، وطلبات الاكتشاف، وما يقتضي القانون من خلاف ذلك؛ وكذلك ردا على ادعاءات التعدي أو عدم الشرعية.<br /><br /></span></li>
+							</ul>
+						</li>
+						<li><span style="font-family: arial, helvetica, sans-serif;"><strong>كيف يمكنك تحديث المعلومات الخاصة بك</strong><strong>:<br /><br /> </strong></span>
+							<ul>
+								<li><span style="font-family: arial, helvetica, sans-serif;">إذا كنت ترغب في تغيير المعلومات الشخصية الخاصة بك في قواعد البيانات الخاصة بنا، يمكنك القيام بذلك من خلال التشكيل الجانبي للحساب الخاص بك، أو عن طريق الاتصال بفريق خدمة العملاء لدينا.<br /><br /></span></li>
+								<li><span style="font-family: arial, helvetica, sans-serif;">الشروط والاحكام. يرجى أيضا زيارة قسم الشروط والاحكام الخاص بنا لتحديد الاستخدام واخلاء المسئولية والقيود المفروضة على المسؤولية التي تحكم استخدام موقعنا.<br /><br /></span></li>
+							</ul>
+						</li>
+						<li><span style="font-family: arial, helvetica, sans-serif;">اتصل بنا. إذا كان لديك اي اسئله بشان سياسة الخصوصية هذه ، الخدمة ، أو www.print.sa ، يرجى مراسلتنا في support@print.sa إذا كنت في اي وقت لا توافق علي هذه السياسة ، يرجى الاتصال بنا على 966599139318+ للغاء حسابك أو الكتابة لنا علي العنوان التالي: support@print.sa.</span></li>
+					</ul>
 				</div>
 			</div>
+
 		</div>
+
+
 	</div>
-</div>
-	</div>
+
+
+
+
+
+
+
+
 	<!-- FOOTER BEGIN -->
 	<input type="hidden" name="_token" value="zTF8v3Wdcro1N3cEwjRSBOpHOjCfGEGMirsWpZv0">
 	<style type="text/css">
