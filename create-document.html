@@ -260,7 +260,7 @@
 									</ul>
 								</div>
 								<ul class="nav navbar-nav navbar-right visible-mobile-flex after-login-header-block">
-									<li class="cart-block"><a href="my-cart.html" id="jumpToStep"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
+									<li class="cart-block"><a href="my-cart.html"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                        <span class="img-block-user">
@@ -290,7 +290,7 @@
 									<li><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
-									<li class="cart-block"><a id="shopt-cart"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
+									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="img-block-user">
@@ -800,11 +800,7 @@
 				}
 				return true;
 			});
-			$("#shopt-cart").on('click', function() {
-				$("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
-					alert("You are on step " + stepNumber + " now");
-				});
-			});
+
 			$('#someSwitchOptionSuccess').change(function() {
 				if (this.checked)
 					$('#autoUpdate').fadeIn('slow');
