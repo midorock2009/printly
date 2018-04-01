@@ -260,7 +260,7 @@
 									</ul>
 								</div>
 								<ul class="nav navbar-nav navbar-right visible-mobile-flex after-login-header-block">
-									<li class="cart-block"><a href="my-cart.html"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
+									<li class="cart-block"><a href="my-cart.html" id="jumpToStep"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                        <span class="img-block-user">
@@ -287,10 +287,10 @@
 									<li><a href="#">وين استلم</a></li>
 									<li><a href="#">كلم برنتلي</a></li>
 									<li><a href="privacy.html"> سياسة الخصوصية</a></li>
-									<li class="active-terms"><a href="terms.html"> شروط والاحكام</a></li>
+									<li><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
-									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
+									<li class="cart-block"><a id="shopt-cart"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="img-block-user">
@@ -382,7 +382,6 @@
 
 								<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
 								<input id="btn-upload" type="hidden" value="sss">
-
 							</form>
 						</div>
 
@@ -401,37 +400,42 @@
 									<div class="col-xs-12">
 										<p>حجم الورقة</p>
 										<select class="selectpicker">
-									  <option>اوراق صغيرة</option>
-									  <option>اوراق متوسطة</option>
-									  <option>اوراق كبيرة</option>
+									  <option value="default" selected="selected" disabled>اختار التفاصيل</option>
+									  <option value=" ">اوراق صغيرة</option>
+									  <option value=" ">اوراق متوسطة</option>
+									  <option value=" ">اوراق كبيرة</option>
 									</select>
 									</div>
 									<div class="col-xs-12">
 										<p>نوع الورق</p>
 										<select class="selectpicker">
-									  <option>ورق عادي</option>
-									  <option>ورق لاصق</option>
-									  <option>ورق لامع</option>
-									  <option>ورق مقوى</option>
+									  <option value="default" selected="selected" disabled>اختار التفاصيل</option>
+									  <option value=" ">ورق عادي</option>
+									  <option value=" ">ورق لاصق</option>
+									  <option value=" ">ورق لامع</option>
+									  <option value=" ">ورق مقوى</option>
 									</select>
 									</div>
 									<div class="col-xs-12">
 										<p>لون الطباعة</p>
 										<select class="selectpicker">
-									  <option>ابيض / اسود</option>
-									  <option>ملون</option>
+									  <option value="default" selected="selected" disabled>اختار</option>
+									  <option value=" ">ابيض / اسود</option>
+									  <option value=" ">ملون</option>
 									</select>
 									</div>
 									<div class="col-xs-12">
 										<p>الجانب</p>
 										<select class="selectpicker">
-									  <option>جانب</option>
-									  <option>جانبين</option>
+									  <option value="default" selected="selected" disabled>اختار</option>
+									  <option value=" ">جانب</option>
+									  <option value=" ">جانبين</option>
 									</select>
 									</div>
 									<div class="col-xs-12">
 										<p>التخطيط</p>
 										<select class="selectpicker">
+							 <option value="default" selected="selected" disabled>اختار</option>
 									  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
 										  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
 										  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
@@ -441,7 +445,11 @@
 
 							</div>
 
-							<span id="status_msg"></span>
+							<br>
+							<button class="btn btn-info" id="reset-btn" type="button">اضف الي سلة الطباعة</button>
+							<button class="btn btn-success" id="next-btn" type="button">اتمام عملية الطلب</button>
+
+
 						</div>
 					</div>
 					<div id="step-2" class="">
@@ -494,6 +502,10 @@
 								</form>
 								<div class="alert alert-success cobon" role="alert">مبروك لديك خصم <strong>١٠٠ ريال</strong></div>
 							</div>
+						</div>
+						<div class="col-xs-12" style="text-align: right">
+							<button class="btn btn-info" id="prev-btn-2" type="button">اضف ملفات اخرى</button>
+							<button class="btn btn-success" id="next-btn-2" type="button"> الدفع والاستلام</button>
 						</div>
 					</div>
 					<div id="step-3" class="">
@@ -572,36 +584,45 @@
 								</div>
 							</div>
 						</div>
+						<div class="col-xs-12" style="text-align: right">
+							<button class="btn btn-info" id="prev-btn-3" type="button">الرجوع الي سلة الطباعة</button>
+							<button class="btn btn-success" id="next-btn-3" type="button"> المتابعة الي الدفع</button>
+						</div>
 					</div>
 					<div id="step-4" class="">
-						<h3 class="border-bottom border-gray pb-2" style="text-align: right">ملخص المبلغ</h3>
-						<div class="container">
-							<div class="row">
-								<div class="paymentCont">
-									<div class="headingWrap">
-										<h3 class="headingTop text-center">اختار طريقة دفعك</h3>
-									</div>
-									<div class="paymentWrap">
-										<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
-											<label class="btn paymentMethod active">
+						<div class="text-right alert alert-success col-xs-12">
+							<h4><b>ملخص المبلغ</b></h4>
+							<p>مبلغ الطباعة : <b>100 ريال</b></p>
+							<p>الضريبة : <b>100 %</b></p>
+							<p>الاجمالي : <b>1000 ريال</b></p>
+							<p>الاجمالي بعد الخصم : <b>10000 ريال</b></p>
+						</div>
+						<hr>
+						<div class="paymentCont col-xs-12">
+							<div class="headingWrap">
+								<h3 class="headingTop text-center">اختار طريقة دفعك</h3>
+							</div>
+							<div class="paymentWrap">
+								<div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+									<label class="btn paymentMethod active">
 					            	<div class="method visa" style="width: 28%"></div>
 					                <input type="radio" name="options" checked> 
 					            </label>
-											<label class="btn paymentMethod">
+									<label class="btn paymentMethod">
 					            	<div class="method master-card" style="width: 28%"></div>
 					                <input type="radio" name="options"> 
 					            </label>
-											<label class="btn paymentMethod">
+									<label class="btn paymentMethod">
 					            	<div class="method cash" style="width: 28%"></div>
 					                <input type="radio" name="options"> 
 					            </label>
 
-										</div>
-									</div>
 								</div>
-
 							</div>
 						</div>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -679,12 +700,55 @@
 					this.on("maxfilesexceeded", function(file) {
 						alert("No more files please!");
 						this.removeFile(file);
-
 					});
+					var myDropZone = this;
+					$("#reset-btn").click(function() {
+						myDropZone.removeAllFiles();
+						$(".selectpicker").val('default');
+						$(".selectpicker").selectpicker("refresh");
+					});
+
 				}
 			};
+			$("#reset-btn").on("click", function() {
+				// Reset wizard
+				$('#smartwizard').smartWizard("reset");
+				return true;
+			});
 
+			$("#prev-btn").on("click", function() {
+				// Navigate previous
+				$('#smartwizard').smartWizard("prev");
+				return true;
+			});
 
+			$("#next-btn").on("click", function() {
+				// Navigate next
+				$('#smartwizard').smartWizard("next");
+				return true;
+			});
+			$("#prev-btn-2").on("click", function() {
+				// Navigate previous
+				$('#smartwizard').smartWizard("prev");
+				return true;
+			});
+
+			$("#next-btn-2").on("click", function() {
+				// Navigate next
+				$('#smartwizard').smartWizard("next");
+				return true;
+			});
+			$("#prev-btn-3").on("click", function() {
+				// Navigate previous
+				$('#smartwizard').smartWizard("prev");
+				return true;
+			});
+
+			$("#next-btn-3").on("click", function() {
+				// Navigate next
+				$('#smartwizard').smartWizard("next");
+				return true;
+			});
 			// Step show event
 			$("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
 				//alert("You are on step "+stepNumber+" now");
@@ -706,6 +770,8 @@
 				transitionEffect: 'fade',
 				toolbarSettings: {
 					toolbarPosition: 'bottom',
+					showNextButton: false, // show/hide a Next button
+					showPreviousButton: false
 				},
 				anchorSettings: {
 					markDoneStep: true, // add done css
@@ -718,6 +784,7 @@
 					previous: 'رجوع'
 				}
 			});
+
 
 			$("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
 				var elmForm = $("#form-step-" + stepNumber);
@@ -732,6 +799,11 @@
 					}
 				}
 				return true;
+			});
+			$("#shopt-cart").on('click', function() {
+				$("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection) {
+					alert("You are on step " + stepNumber + " now");
+				});
 			});
 			$('#someSwitchOptionSuccess').change(function() {
 				if (this.checked)
