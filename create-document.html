@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Account Setting </title>
+
+	<meta name="description" content="إعدادات الحساب - اطبع | Print" />
+	<meta name="keywords" content="إعدادات الحساب - اطبع | Print" />
+	<meta name="robots" content="noindex,nofollow" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109254566-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-109254566-1');
+
+	</script>
+
+
+	<!--font-awesome-css-start-here-->
+	<link href="front-assets/css/font-awesome.min.css?v=11" rel="stylesheet" type="text/css" />
+	<link href="front-assets/css/animate.css?v=11" rel="stylesheet" type="text/css" />
+
+	<link href="front-assets/css/printing.css" rel="stylesheet" type="text/css" />
+
+
+	<link href="https://www.print.sa/assets/alert/css/alert.css?v=11" rel="stylesheet" />
+	<link href="https://www.print.sa/assets/alert/themes/default/theme.css?v=11" rel="stylesheet" />
+	<!--previous css used starts-->
+
+	<link href="front-assets/css/dropzone.css" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+	<link href="front-assets/css/ar/bootstrap.min.css" rel="stylesheet">
+	<link href="https://www.print.sa/front-assets/css/ar/slick.css?v=11" rel="stylesheet">
+	<link href="front-assets/css/ar/style.css" rel="stylesheet">
+	<link href="front-assets/css/rtl.css" rel="stylesheet" type="text/css" />
+
+	<!--previous css used ends-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="front-assets/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="front-assets/images/favicon-16x16.png">
+	<!--  RTL-->
+	<!--   -->
+
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/bootstrap.min.js?v=11"></script>
+	<script type="text/javascript">
+		var SITE_URL = 'https://www.print.sa';
+
+	</script>
+
+
+	<!--previous JS used starts-->
+
+	<script src="https://www.print.sa/front-assets/js/angular/angular.js?v=11"></script>
+	<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.js"></script> -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-route.js?v=11"></script>
+	<!--angular message js-->
+
+	<script src="https://www.print.sa/front-assets/js/angular/main.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-messages.js?v=11" type="text/javascript"></script>
+	<!-- Angular assets start -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/ng-file-upload.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/ng-file-upload-shim.js?v=11" type="text/javascript"></script>
+	<!-- Angular assets ends -->
+	<!-- Angular Controller JS starts -->
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/LoginCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/CMSCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/UserCtrl.js?v=11" type="text/javascript"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-controllers/AddressBookCtrl.js?v=11" type="text/javascript"></script>
+	<!-- Angular Controller JS ends -->
+	<!--  Capcha start -->
+
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/angular-recaptcha.js?v=11"></script>
+	<script src="https://www.print.sa/front-assets/js/angular/angular-assets/captcha-service.js?v=11"></script>
+	<!--  Capcha end -->
+	<!-- Angular Controller JS starts -->
+	<!-- Main SmartWizard CSS -->
+	<link href="front-assets/src-create/css/smart_wizard.css" rel="stylesheet">
+
+	<!-- Optional SmartWizard themes -->
+	<link href="front-assets/src-create/css/smart_wizard_theme_circles.css" rel="stylesheet">
+	<link href="front-assets/src-create/css/smart_wizard_theme_arrows.css" rel="stylesheet">
+	<link href="front-assets/src-create/css/smart_wizard_theme_dots.css" rel="stylesheet">
+
+
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+
+	<style type="text/css">
+		.frogot_submit_btn p {
+			margin-bottom: 0;
+			color: #fff;
+		}
+
+		.other-login {
+			display: block;
+			margin: 17px 0;
+		}
+
+		.other-login ul {
+			padding: 0;
+		}
+
+		.other-login ul li {
+			display: block;
+			text-align: center;
+			margin: 10px 0;
+			list-style-type: none;
+			float: none;
+		}
+
+		.other-login ul li.gplus {
+			float: none
+		}
+
+		.fa {
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		.gplus a {
+			background: #df4a32;
+			border-radius: 30px;
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			height: 40px;
+			padding: 9px 15px;
+		}
+
+		.fb a {
+			background: #3a579a;
+			border-radius: 30px;
+			color: #fff;
+			display: block;
+			font-size: 14px;
+			height: 40px;
+			padding: 9px 15px;
+		}
+
+		.or-option {
+			width: 270px;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+			margin-top: 10px;
+		}
+
+
+		.modal.container {
+			max-width: none;
+		}
+
+		.modal-backdrop {
+			z-index: 8 !important;
+		}
+
+		.ng-cloak {
+			display: none;
+		}
+
+		.pdfFileName {
+			padding: 20px 10px !important;
+		}
+
+		.table>tbody>tr>td {
+			vertical-align: middle !important;
+		}
+
+	</style>
+
+	<script type="text/javascript">
+		var site_url = "https://www.print.sa";
+		var csrf_token = "zTF8v3Wdcro1N3cEwjRSBOpHOjCfGEGMirsWpZv0";
+
+	</script>
+
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+	<style type="text/css">
+		.img-block-user {
+			border-radius: 50%;
+			display: inline-block;
+			height: 35px;
+			margin-right: 10px;
+			overflow: hidden;
+			width: 35px;
+			vertical-align: middle !important;
+		}
+
+		.languag-head {
+			margin-top: 30px;
+			float: left;
+		}
+
+		.languag-head a {
+			color: #fff;
+			cursor: pointer;
+		}
+
+		.languag-head a:hover {
+			color: #631383;
+		}
+
+		/*.pdfFileName {white-space: nowrap;width: 160px;overflow: hidden;text-overflow: ellipsis;display: inline-block;padding: 20px 10px;}*/
+
+	</style>
+	<link href="front-assets/css/printdotsa.css" rel="stylesheet">
+</head>
+
+
+<body ng-app="printingStore" onload="return testIng();">
+
+	<!-- HEADER BEGIN -->
+	<header class="container-fluid header ">
+		<!--<div class="header-wave-one"></div>-->
+
+		<!--<div class="header-wave-two"></div>-->
+		<div class="header-overlay"></div>
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<!--After login starts here-->
+					<div class="col-xs-12">
+						<nav class="navbar navbar-art after-login-menu ">
+							<div class="navbar-header">
+								<div class="btns-menu-open-close after-login-menu-icon">
+									<span class="menu-open-btn">&#9776;</span>
+									<span class="menu-open-btn-close">&times;</span>
+								</div>
+								<div class="nav navbar-nav navbar-right visible-mobile-flex cart-icon-block">
+									<ul>
+										<li><a href="my-cart.html"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
+									</ul>
+								</div>
+								<ul class="nav navbar-nav navbar-right visible-mobile-flex after-login-header-block">
+									<li class="cart-block"><a href="my-cart.html"><i class="icon-shopping-cart"><span class="myCartCount">2</span></i></a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                       <span class="img-block-user">
+                                                  <img  id="header_profile_img" src="https://www.print.sa/front-assets/images/user.png"/>
+                                            </span> <span>محمد احمد</span><span class="icon-arrow_down"></span>
+                    </a>
+										<ul class="dropdown-menu">
+											<li><a href="#"><i class="icon-home"></i>لوحة القيادة</a></li>
+											<li><a href="account_dashboard.html"><i class="icon-account-settings"></i>إعدادت الحساب</a></li>
+											<li><a href="https://www.print.sa/user/logout"><i class="icon-logout"></i>الخروج</a></li>
+										</ul>
+									</li>
+								</ul>
+								<a class="navbar-brand" href="index.html"><img src="front-assets/images/logo.png" alt="Logo"></a>
+								<div class="languag-head">
+
+								</div>
+							</div>
+
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav navbar-right special" style="float:right !important">
+									<li><a href="#">مين برنتلي</a></li>
+									<li><a href="#">عن برنتلي</a></li>
+									<li><a href="#">وين استلم</a></li>
+									<li><a href="#">كلم برنتلي</a></li>
+									<li><a href="privacy.html"> سياسة الخصوصية</a></li>
+									<li class="active-terms"><a href="terms.html"> شروط والاحكام</a></li>
+								</ul>
+								<ul class="nav navbar-nav navbar-left after-login-header-block">
+									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="img-block-user">
+                                                 </span><span class="hidden-xs">محمد احمد</span><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+
+                                                 </a>
+										<ul class="dropdown-menu">
+											<li><a href="account_dashboard.html"><i class="glyphicon glyphicon-cog"></i>حسابي</a></li>
+											<li><a href="my-orders.htm"><i class="glyphicon glyphicon-open-file"></i>طلباتي</a></li>
+											<li><a href="https://www.print.sa/user/logout"><i class="glyphicon glyphicon-log-out"></i>الخروج</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<!--After login ends here-->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- HEADER EOF -->
+	<script type="text/javascript">
+		function changeLanguage(lang) {
+			window.location.href = site_url + '/set_lang/' + lang;
+		}
+
+	</script>
+
+	<script>
+		$(".btns-menu-open-close").on("click", function() {
+			$(this).parent(".navbar-header").toggleClass("menu-open");
+		});
+
+	</script>
+
+
+	<style>
+		.header {
+			background: #fff;
+			background: rgba(255, 255, 255, 1);
+			box-shadow: 0 0 2px rgba(0, 0, 0, 0.24);
+			position: relative;
+		}
+
+		.dropzone {
+
+			/*border: 2px dashed #EB7260;*/
+			/*    box-shadow: 0 0 0 2px #373b44;*/
+			padding: 40px 20px 20px;
+
+			/*background: #373b44;*/
+			color: #7d7d7d;
+
+			text-align: center;
+
+		}
+
+
+
+		.dropzone h3 {
+
+			color: white;
+
+			text-align: center;
+
+			line-height: 3em;
+
+			margin-top: 20px;
+
+		}
+
+	</style>
+	<div class="dash-main-block">
+		<div class="container">
+			<div id="smartwizard">
+				<ul>
+					<li><a href="#step-1">المرحلة ١<br /><small>رفع الملفات</small></a></li>
+					<li><a href="#step-2">المرحلة ٢<br /><small>سلة الطباعة</small></a></li>
+					<li><a href="#step-3">المرحلة ٣<br /><small>طريقة الاستلام</small></a></li>
+					<li><a href="#step-4">المرحلة ٤<br /><small>الدفع</small></a></li>
+				</ul>
+
+				<div>
+					<div id="step-1" class="text-right">
+						<h3 class="border-bottom border-gray pb-2">ارفع الملفات</h3>
+						<div style="margin-top: 10px;">
+							<form name="" id="myAwesomeDropzone" class="dropzone" action="/file/post" method="post" enctype="multipart/form-data">
+
+								<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
+								<input id="btn-upload" type="hidden" value="sss">
+
+							</form>
+						</div>
+
+						<div class="col-xs-12">
+
+							<div class="row">
+
+								<div class="note">
+
+									<span class="glyphicon glyphicon-info-sign"></span><span> ملحوظة! </span>
+									<p> حجم الملف المسموح: 50MB</p>
+
+								</div>
+
+								<div class="properties">
+									<div class="col-xs-12">
+										<p>حجم الورقة</p>
+										<select class="selectpicker">
+									  <option>اوراق صغيرة</option>
+									  <option>اوراق متوسطة</option>
+									  <option>اوراق كبيرة</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>نوع الورق</p>
+										<select class="selectpicker">
+									  <option>ورق عادي</option>
+									  <option>ورق لاصق</option>
+									  <option>ورق لامع</option>
+									  <option>ورق مقوى</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>لون الطباعة</p>
+										<select class="selectpicker">
+									  <option>ابيض / اسود</option>
+									  <option>ملون</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>الجانب</p>
+										<select class="selectpicker">
+									  <option>جانب</option>
+									  <option>جانبين</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>التخطيط</p>
+										<select class="selectpicker">
+									  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
+										  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
+										  <option data-content="<img src='http://via.placeholder.com/100x100'>"></option>
+										</select>
+									</div>
+								</div>
+
+							</div>
+
+							<span id="status_msg"></span>
+						</div>
+					</div>
+					<div id="step-2" class="">
+						<h3 class="border-bottom border-gray pb-2">Step 2 Content</h3>
+						<div>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </div>
+					</div>
+					<div id="step-3" class="">
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					</div>
+					<div id="step-4" class="">
+						<h3 class="border-bottom border-gray pb-2">Step 4 Content</h3>
+						<div class="card">
+							<div class="card-header">My Details</div>
+							<div class="card-block p-0">
+								<table class="table">
+									<tbody>
+										<tr>
+											<th>Name:</th>
+											<td>Tim Smith</td>
+										</tr>
+										<tr>
+											<th>Email:</th>
+											<td>example@example.com</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+	<footer id="footer" class="container-fluid footer">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-sm-4 col-xs-12">
+						<div class="footer-logo">
+							<img src="front-assets/images/logo.png" alt="Logo">
+						</div>
+
+					</div>
+					<div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 footer-internal-links">
+						<h3>
+							<p>روابط مهمة</p>
+						</h3>
+						<ul>
+							<li><a class="" href="#">     مین برنتلي؟   </a></li>
+							<li><a class="" href="#"> ایش قالو عن برنتلي؟ </a></li>
+							<li><a class="" href="#"> من وین استلم؟  </a></li>
+							<li><a class="" href="#">سياسة الخصوصية</a></li>
+
+							<li><a class="" href="#"> الشروط و الاحكام&nbsp;   </a></li>
+							<li><a class="" href="#"> كلم برنتلي </a></li>
+						</ul>
+					</div>
+					<div class="col-lg-4 col-sm-4 col-xs-12">
+						<div class="footer-print">
+							<h4> مكاني </h4>
+							<p> Print.sa,Al Sadhan 90 Sulaymaniyah, Musa Ibn Nusair Street, Riyadh </p>
+							<p> للدعم الفني أو الشكاوى، يمكنك التواصل معنا عبر ال واتساب 00000000000000000</p>
+
+							<ul class="footer-social">
+								<li><a target="blank" href="#"><i class="fa fa-facebook"></i> </a></li>
+								<li><a target="blank" href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a target="blank" href="#"> <i class="fa fa-instagram"></i></a></li>
+							</ul>
+
+
+						</div>
+					</div>
+					<div class="col-xs-12 text-center footer-copy">
+
+						<span>© حقوق النشر 2018<a href="https://www.print.sa">  Printly</a> كل الحقوق محفوظة.</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" src="https://www.print.sa/front-assets/js/responsivetabs.js?v=11"></script>
+	<link href="front-assets/css/custom_loader.css" rel="stylesheet" type="text/css" />
+	<div ng-if="GLOBAL.request_inprogress" class="loading"></div>
+	<script src="front-assets/src-create/js/jquery.smartWizard.js"></script>
+	<script src="front-assets/js/dropzone.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			Dropzone.options.myAwesomeDropzone = {
+				maxFilesize: 50,
+				maxFiles: 1,
+				dictDefaultMessage: "قم برفع ملفك هنا",
+				accept: function(file, done) {
+					console.log("uploaded");
+					done();
+				},
+				init: function() {
+					this.on("maxfilesexceeded", function(file) {
+						alert("No more files please!");
+						this.removeFile(file);
+
+					});
+				}
+			};
+
+
+			// Step show event
+			$("#smartwizard").on("showStep", function(e, anchorObject, stepNumber, stepDirection, stepPosition) {
+				//alert("You are on step "+stepNumber+" now");
+				if (stepPosition === 'first') {
+					$("#prev-btn").addClass('disabled');
+				} else if (stepPosition === 'final') {
+					$("#next-btn").addClass('disabled');
+				} else {
+					$("#prev-btn").removeClass('disabled');
+					$("#next-btn").removeClass('disabled');
+				}
+			});
+
+
+			// Smart Wizard
+			$('#smartwizard').smartWizard({
+				selected: 0,
+				theme: 'circles',
+				transitionEffect: 'fade',
+				toolbarSettings: {
+					toolbarPosition: 'bottom',
+				},
+				anchorSettings: {
+					markDoneStep: true, // add done css
+					markAllPreviousStepsAsDone: true, // When a step selected by url hash, all previous steps are marked done
+					removeDoneStepOnNavigateBack: true, // While navigate back done step after active step will be cleared
+					enableAnchorOnDoneStep: true // Enable/Disable the done steps navigation
+				},
+				lang: {
+					next: 'التالي',
+					previous: 'رجوع'
+				}
+			});
+
+			$("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
+				var elmForm = $("#form-step-" + stepNumber);
+				// stepDirection === 'forward' :- this condition allows to do the form validation
+				// only on forward navigation, that makes easy navigation on backwards still do the validation when going next
+				if (stepDirection === 'forward' && elmForm) {
+					var elmErr = $("#btn-upload").val();
+					if (elmErr == 0) {
+						// Form validation failed
+						alert("قم باختيار ملف")
+						return false;
+					}
+				}
+				return true;
+			});
+
+
+		});
+
+	</script>
+</body>
+
+</html>
