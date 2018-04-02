@@ -388,16 +388,10 @@
 										<div class="drag-and-drop">
 
 											<div class="click-drop-block">
-
-												<form name="" id="myAwesomeDropzone" class="dropzone ng-pristine ng-valid dz-clickable" action="/file/post" method="post" enctype="multipart/form-data">
-
-													<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
-
-													<input type="hidden" name="_token" value="y3V9JgDrDqWMgmtrGi63EEUKSQRBcaUr9wPzY1Gz" autocomplete="off">
-
-													<div class="dz-default dz-message"><span> انقر هنا </span>
-														<p> لرفع الملف الذي تريد طباعته </p>
-														<p></p>
+												<form action="/file-upload" class="dropzone" id="myAwesomeDropzone">
+													<div class="fallback">
+														<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
+														<input name="file" type="file" multiple />
 													</div>
 												</form>
 
