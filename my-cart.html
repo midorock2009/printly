@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Account Setting </title>
+	<title>سلة الطباعة </title>
 
 	<meta name="description" content="إعدادات الحساب - اطبع | Print" />
 	<meta name="keywords" content="إعدادات الحساب - اطبع | Print" />
@@ -290,7 +290,7 @@
 									<li><a href="terms.html"> شروط والاحكام</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-left after-login-header-block">
-									<li class="cart-block"><a id="shopt-cart"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
+									<li class="cart-block"><a href="my-cart.html"><i class="glyphicon glyphicon-print"><span class="myCartCount">2</span></i></a></li>
 									<li class="dropdown">
 										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                     <span class="img-block-user">
@@ -377,13 +377,70 @@
 				<div>
 					<div id="step-1" class="text-right">
 						<h3 class="border-bottom border-gray pb-2">ارفع الملفات</h3>
-						<div style="margin-top: 10px;">
-							<form name="" id="myAwesomeDropzone" class="dropzone" action="/file/post" method="post" enctype="multipart/form-data">
+						<div class="col-xs-12 upload-file">
 
-								<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
-								<input id="btn-upload" type="hidden" value="sss">
-							</form>
+							<div class="row">
+
+								<div class="col-lg-5 col-md-5 col-xs-12">
+
+									<div class="row">
+
+										<div class="drag-and-drop">
+
+											<div class="click-drop-block">
+												<form action="/file-upload" class="dropzone" id="myAwesomeDropzone">
+													<div class="fallback">
+														<span style="font-size: 2em" class="glyphicon glyphicon-cloud-upload"></span>
+														<input name="file" type="file" multiple />
+													</div>
+												</form>
+
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="col-lg-7 col-md-7 col-xs-12">
+
+									<div class="row last-uploaded-file">
+
+										<h3 class="text-center"> آخر ملف تم تحميله </h3>
+
+										<div class="last-uploaded-file-wrap">
+
+											<div class="last-uploaded-file-img">
+
+												<img src="https://www.print.sa/front-assets/images/pdf-img-adobe.png" alt="">
+
+											</div>
+
+
+											<div class="last-uploaded-file-action">
+
+
+												<p title="Document1">اسم الملف المرفوع</p>
+
+												<a class="create-bnt create-bnt-yellow-fill" href="#" title=" معاينة " target="_new"> معاينة </a>
+												<a class="create-bnt removeFile" href="#" id="loader_10850"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+
+
+
+											</div>
+
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
 						</div>
+
 
 						<div class="col-xs-12">
 
@@ -407,6 +464,12 @@
 									</select>
 									</div>
 									<div class="col-xs-12">
+										<p>عدد الشرائح في الورقة</p>
+										<div style="width: 10%">
+											<input type="number" class="form-control" value="0" min="0">
+										</div>
+									</div>
+									<div class="col-xs-12">
 										<p>نوع الورق</p>
 										<select class="selectpicker">
 									  <option value="default" selected="selected" disabled>اختار التفاصيل</option>
@@ -414,6 +477,26 @@
 									  <option value=" ">ورق لاصق</option>
 									  <option value=" ">ورق لامع</option>
 									  <option value=" ">ورق مقوى</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>طريقة الطباعة</p>
+										<select class="selectpicker">
+									  <option value="default" selected="selected" disabled>اختار التفاصيل</option>
+									  <option value=" ">طولي</option>
+									  <option value=" ">عرضى</option>
+									</select>
+									</div>
+									<div class="col-xs-12">
+										<p>التغليف</p>
+										<select class="selectpicker">
+									  <option value="default" selected="selected" disabled>اختار التفاصيل</option>
+									  <option value=" ">بدون تغليف</option>
+									  <option value=" ">سلك</option>
+									  <option value=" ">بلاستيك</option>
+									  <option value=" ">كعب</option>
+									  <option value=" ">تدبيس</option>
+									  <option value=" ">تخيط</option>
 									</select>
 									</div>
 									<div class="col-xs-12">
@@ -646,12 +729,11 @@
 							<p>روابط مهمة</p>
 						</h3>
 						<ul>
-							<li><a class="" href="#">     مین برنتلي؟   </a></li>
+							<li><a class="" href="#"> مین برنتلي؟ </a></li>
 							<li><a class="" href="#"> ایش قالو عن برنتلي؟ </a></li>
 							<li><a class="" href="#"> من وین استلم؟  </a></li>
 							<li><a class="" href="#">سياسة الخصوصية</a></li>
-
-							<li><a class="" href="#"> الشروط و الاحكام&nbsp;   </a></li>
+							<li><a class="" href="#"> الشروط و الاحكام&nbsp;</a></li>
 							<li><a class="" href="#"> كلم برنتلي </a></li>
 						</ul>
 					</div>
