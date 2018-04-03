@@ -333,6 +333,14 @@
 										</div>
 
 										<button class="login-btn" type="submit">تسجيل الدخول</button>
+										<div class="space"></div>
+										<div class="alert alert-success">
+											تم التسجيل بنجاح
+										</div>
+
+										<div class="alert alert-danger">
+											خطأ في تسجيل الدخول
+										</div>
 										<p><a onclick="openForgetModal(event)" class="recover-pass-link">إستعادة كلمة المرور</a></p>
 										<div class="or-option removeOnload" style="display: none;"><span> أو </span>
 											<div class="other-login removeOnload" style="display: none;">
@@ -497,34 +505,6 @@
 											</div>
 										</div>
 
-										<h5> هل أنت طالب جامعي؟ </h5>
-										<div class="radio-btns" ng-init="signupuser.is_university_student = 'no'">
-											<div class="radio-btn">
-												<input type="radio" id="f-option" ng-model="signupuser.is_university_student" name="is_university_student" value="yes">
-												<label for="f-option"> نعم&nbsp; </label>
-												<div class="check"></div>
-											</div>
-											<div class="radio-btn">
-												<input type="radio" id="s-option" ng-model="signupuser.is_university_student" name="is_university_student" ng-model="is_university_student" value="no" checked="true">
-												<label for="s-option"> لا </label>
-												<div class="check">
-													<div class="inside"></div>
-												</div>
-											</div>
-											<div class="clearfix"></div>
-
-											<div class="clr"></div>
-											<span class="highlight"></span>
-											<div class="error-new-block ng-cloak" ng-messages="signupForm.is_university_student.$error" ng-if="signupForm.$submitted || signupForm.is_university_student.$touched">
-												<p ng-message="required" class="error">هذه الخانة مطلوبه.</p>
-												<p ng-message="minlength" class="error">هذا الحقل قصير جدا.</p>
-												<p ng-message="maxlength" class="error">هذا الحقل طويل جدا.</p>
-												<p ng-message="email" class="error">يجب أن يكون هذا الحقل بريد إلكتروني صالحا.</p>
-												<p ng-message="password" class="error">كلمة المرور غير صالحة.</p>
-												<p ng-message="pattern" class="error">تنسيق غير صالح.</p>
-											</div>
-										</div>
-
 
 										<div ng-show="signupuser.is_university_student == 'yes'" class="mobile-nu-block input-first" ng-class="{ 'has-error': signupForm.country_id.$touched && signupForm.country_id.$invalid }" ng-init="getCountries('show_selected');">
 											<select style="margin-bottom: 20px;" name="country_id" id="country_id" ng-model="signupuser.country_id" ng-required="signupuser.is_university_student == 'yes'" ng-change="getUniversity(signupuser.country_id)">
@@ -608,6 +588,14 @@
 
 										[[ signupForm.$errors ]]
 										<button class="login-btn" type="submit">تسجيل</button>
+										<div class="space"></div>
+										<div class="alert alert-success">
+											تم التسجيل بنجاح
+										</div>
+
+										<div class="alert alert-danger">
+											خطأ في تسجيل الدخول
+										</div>
 										<div class="or-option removeOnload" style="display: none;"> أو </div>
 										<div class="other-login removeOnload" style="display: none;">
 											<ul>
@@ -1257,20 +1245,103 @@
 	</section>
 	<!-- TESTIMONIALS EOF -->
 	<!-- TESTIMONIALS BEGIN -->
-	<section class="container-fluid testimonials">
-		<div class="row">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-xs-12 col-ms-12 col-sm-12">
-						<h2 class="text-center">ایش فایدة برنتلي في حیاتك ؟ </h2>
-					</div>
-				</div>
-				<div class="row">
-
-				</div>
-			</div>
-		</div>
-	</section>
+<section id="testimonial">
+    <div class="container">
+         
+            <div class="row text-center">
+                <h2><span class="ion-minus"></span>ایش قالو عن برنتلي؟<span class="ion-minus"></span></h2>
+            </div>
+                 
+            <div class="row">
+                   
+                <div id="carousel" class="carousel slide">
+                     
+                    <ol class="carousel-indicators" style="display:none;">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                    </ol>
+                     
+                    <div class="carousel-inner">
+                        
+                     <div class="item active">
+                       <div class="row text-center">
+                         
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                 <img class="img-circle" src="http://via.placeholder.com/150x150" style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">Jane Doe</footer>
+                                </blockquote>
+                         </div>
+                         
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                 <img class="img-circle" src="http://via.placeholder.com/150x150" style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">Jack Doe</footer>
+                                </blockquote>
+                         </div>
+                         
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <img class="img-circle" src="http://via.placeholder.com/150x150" style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">John Doe</footer>
+                                </blockquote>
+                         </div>
+                         
+                       </div>
+                    </div>
+                     
+                    <div class="item">
+                      <div class="row text-center">
+                       
+                             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                 <img class="img-circle" src="http://via.placeholder.com/150x150" style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">James Doe</footer>
+                                </blockquote>
+                         </div>
+                         
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                 <img class="img-circle" src="http://via.placeholder.com/150x150"  style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">Jackson Doe</footer>
+                                </blockquote>
+                         </div>
+                         
+                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                <img class="img-circle" src="http://via.placeholder.com/150x150"  style="width: 150px;height:150px;">
+                         
+                                 <blockquote>
+                                       <p><i class="fa fa-quote-right"></i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec
+                                       </p>
+                                       <footer class="blockquote-footer">Jan Doe</footer>
+                                </blockquote>
+                         </div>
+                             
+                       </div>
+                      </div>
+                      
+                    </div>   <!-- Carousel-inner--> 
+                </div>  <!-- Carousel-->
+            </div> 
+              	
+    </div>    
+</section>
 	<!-- TESTIMONIALS EOF -->
 
 
