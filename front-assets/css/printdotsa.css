@@ -1293,7 +1293,17 @@ a:active {
 	display: none;
 	text-align: right
 }
-
+/*
+#autoUpdate_co {
+	margin-top: 10px;
+	display: none;
+	text-align: right
+}
+*/
+.has-feedback{
+	display: none;
+	margin-top: 10px
+}
 .testy {
 	border: 2px solid #cccccc;
 	padding: 14px 10px 5px;
