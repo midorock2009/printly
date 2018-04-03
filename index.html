@@ -89,6 +89,11 @@
 	<!--  Capcha end -->
 	<script src="https://www.print.sa/front-assets/js/dropzone.min.js?v=11" type="text/javascript"></script>
 	<!-- Angular Controller JS starts -->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
 
 	<style type="text/css">
 		.frogot_submit_btn p {
@@ -954,6 +959,7 @@
 					<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
 						<h2 class="text-center"> حاسبة الأسعار </h2>
 					</div>
+					<!--
 					<div class="col-lg-8 col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
 						<div class="col-xs-12 calc-wrap">
 							<form class="form-inline">
@@ -992,6 +998,195 @@
 								<div class="col-md-4"></div>
 							</div>
 							<div class="mrg-rht col-xs-4 center-block col-md-offset-1">
+
+							</div>
+						</div>
+					</div>
+-->
+					<div class="col-lg-8 col-xs-12 col-sm-12 col-md-12 col-lg-offset-2 col-md-offset-0 col-sm-offset-0 col-xs-offset-0">
+						<div class="col-xs-12 calc-wrap">
+							<div class="row">
+								<!-- Document Type BEGIN -->
+								<div class="col-xs-12 calc-row calc-row-30">
+									<h4>نوع الوثيقة</h4>
+									<div class="funkyradio ">
+										<div class="row">
+											<div class="funkyradio-success col-xs-12 col-md-4">
+												<input type="radio" name="radio" id="radio1" />
+												<label for="radio1">اوراق حجم عادي</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-4">
+												<input type="radio" name="radio" id="radio2" />
+												<label for="radio2">اوراق حجم متوسط</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-4">
+												<input type="radio" name="radio" id="radio3" />
+												<label for="radio3">اوراق حجم كبير</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Document Type EOF -->
+								<!-- Paper Size * Paper Weight WRAP BEGIN -->
+								<div class="col-xs-12 calc-row calc-row-30">
+									<h4>حجم الورقة</h4>
+									<div class="funkyradio ">
+										<div class="row">
+											<div class="funkyradio-success col-xs-12 col-md-4">
+												<input type="radio" name="radio-Type" id="radio-A" />
+												<label for="radio-A" style="width: 60%">A4</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-4">
+												<input type="radio" name="radio-Type" id="radio-B" />
+												<label for="radio-B" style="width: 60%">A5</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Paper Size * Paper Weight WRAP EOF -->
+								<!-- Paper Type BEGIN -->
+								<div class="col-xs-12 calc-row calc-row-30" id="paperTypeHTML">
+									<h4>نوع الورق</h4>
+									<div class="funkyradio ">
+										<div class="row">
+											<div class="funkyradio-success col-xs-12 col-md-3">
+												<input type="radio" name="radio-Paper" id="radioPaper-1" />
+												<label for="radioPaper-1">ورق طباعة عادي</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-3">
+												<input type="radio" name="radio-Paper" id="radioPaper-2" />
+												<label for="radioPaper-2">ورق لاصق</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-3">
+												<input type="radio" name="radio-Paper" id="radioPaper-3" />
+												<label for="radioPaper-3">ورق لماع</label>
+											</div>
+											<div class="funkyradio-success col-xs-12 col-md-3">
+												<input type="radio" name="radio-Paper" id="radioPaper-4" />
+												<label for="radioPaper-4">ورق مقوى</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Paper Type EOF -->
+								<!-- Color & Side WRAP BEGIN -->
+								<div class="col-xs-12">
+									<div class="row">
+										<!-- Color BEGIN -->
+										<div class="col-xs-12 calc-row calc-row-30">
+											<h4>اللون</h4>
+											<div class="funkyradio ">
+												<div class="row">
+													<div class="funkyradio-success col-xs-12 col-md-3">
+														<input type="radio" name="radio-Paper-C" id="radioPaper-B" />
+														<label for="radioPaper-B">أبيض واسود</label>
+													</div>
+													<div class="funkyradio-success col-xs-12 col-md-3">
+														<input type="radio" name="radio-Paper-C" id="radioPaper-C" />
+														<label for="radioPaper-C">ملون</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Color EOF -->
+										<!-- Side BEGIN -->
+										<div class="col-xs-12 calc-row calc-row-30">
+											<h4>جانب</h4>
+											<div class="funkyradio ">
+												<div class="row">
+													<div class="funkyradio-success col-xs-12 col-md-3">
+														<input type="radio" name="radio-Paper-D" id="radioPaper-face-a" />
+														<label for="radioPaper-face-a">جانب واحد</label>
+													</div>
+													<div class="funkyradio-success col-xs-12 col-md-3">
+														<input type="radio" name="radio-Paper-D" id="radioPaper-face-b" />
+														<label for="radioPaper-face-b">وجهين</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- Side EOF -->
+									</div>
+								</div>
+								<!-- Color & Side WRAP EOF -->
+								<!-- Binding Option & No. of Pages WRAP BEGIN -->
+								<div class="col-xs-12">
+									<div class="row">
+										<!-- Binding Option BEGIN -->
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 calc-row">
+											<h4>خيارات التجليد</h4>
+											<select class="selectpicker">
+<option value="default" selected="selected" disabled>اختار التفاصيل</option>
+<option value=" ">بدون تغليف</option>
+<option value=" ">سلك</option>
+<option value=" ">بلاستيك</option>
+<option value=" ">كعب</option>
+<option value=" ">تدبيس</option>
+<option value=" ">تخيط</option>
+</select>
+
+										</div>
+										<!--Binding Option EOF -->
+										<!-- No. of Pages BEGIN -->
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 calc-row">
+											<h4> عدد الصفحات </h4>
+											<!--<label for="no-of-pages"><input id="no-of-pages" type="number"></label>-->
+											<div class="input-group" style="width: 65%;">
+												<span class="input-group-btn">
+              <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[1]">
+                <span class="glyphicon glyphicon-minus"></span>
+												</button>
+												</span>
+												<input type="number" name="quant[1]" class="form-control input-number" value="100" min="1" max="1000000">
+												<span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[1]" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">
+                  <span class="glyphicon glyphicon-plus"></span>
+												</button>
+												</span>
+											</div>
+										</div>
+										<!-- No. of Pages EOF -->
+									</div>
+								</div>
+								<!-- Binding Option & No. of Pages WRAP EOF -->
+								<!-- Quantity BEGIN -->
+								<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 calc-row">
+									<h4>كمية</h4>
+									<div class="input-group" style="width: 65%;">
+										<span class="input-group-btn">
+              <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                <span class="glyphicon glyphicon-minus"></span>
+										</button>
+										</span>
+										<input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100000">
+										<span class="input-group-btn">
+              <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]" style="border-top-right-radius: 0;border-bottom-right-radius: 0;">
+                  <span class="glyphicon glyphicon-plus"></span>
+										</button>
+										</span>
+									</div>
+								</div>
+								<!-- Quantity EOF -->
+								<!-- Price BEGIN -->
+								<div class="col-lg-12">
+									<div class="form-group" style="margin-top: 20px">
+										<div class="input-group">
+											<input type="text" class="form-control" id="exampleInputAmount" placeholder="0.00">
+											<div class="input-group-addon">ريال</div>
+										</div>
+									</div>
+									<button type="submit" class="btn btn-success btn-block">احسب السعر</button>
+								</div>
+
+								<!-- Price EOF -->
+
+								<div class="col-sm-3 col-md-3 col-lg-3 padd-none">
+									<input type="hidden" name="txtPaperCost" value="4" autocomplete="off">
+									<input type="hidden" name="txtPrintingCost" value="9" autocomplete="off">
+									<input type="hidden" name="txtBindingCost" value="0" autocomplete="off">
+									<input type="hidden" name="txtFoldingCost" value="0" autocomplete="off">
+									<input type="hidden" name="txtFinalPrice" value="1300.00" autocomplete="off">
+								</div>
 
 							</div>
 						</div>
@@ -1498,7 +1693,77 @@
 					opacity: '1',
 				});
 			});
+			$('.btn-number').click(function(e) {
+				e.preventDefault();
 
+				fieldName = $(this).attr('data-field');
+				type = $(this).attr('data-type');
+				var input = $("input[name='" + fieldName + "']");
+				var currentVal = parseInt(input.val());
+				if (!isNaN(currentVal)) {
+					if (type == 'minus') {
+
+						if (currentVal > input.attr('min')) {
+							input.val(currentVal - 1).change();
+						}
+						if (parseInt(input.val()) == input.attr('min')) {
+							$(this).attr('disabled', true);
+						}
+
+					} else if (type == 'plus') {
+
+						if (currentVal < input.attr('max')) {
+							input.val(currentVal + 1).change();
+						}
+						if (parseInt(input.val()) == input.attr('max')) {
+							$(this).attr('disabled', true);
+						}
+
+					}
+				} else {
+					input.val(0);
+				}
+			});
+			$('.input-number').focusin(function() {
+				$(this).data('oldValue', $(this).val());
+			});
+			$('.input-number').change(function() {
+
+				minValue = parseInt($(this).attr('min'));
+				maxValue = parseInt($(this).attr('max'));
+				valueCurrent = parseInt($(this).val());
+
+				name = $(this).attr('name');
+				if (valueCurrent >= minValue) {
+					$(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+				} else {
+					alert('Sorry, the minimum value was reached');
+					$(this).val($(this).data('oldValue'));
+				}
+				if (valueCurrent <= maxValue) {
+					$(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+				} else {
+					alert('Sorry, the maximum value was reached');
+					$(this).val($(this).data('oldValue'));
+				}
+
+
+			});
+			$(".input-number").keydown(function(e) {
+				// Allow: backspace, delete, tab, escape, enter and .
+				if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+					// Allow: Ctrl+A
+					(e.keyCode == 65 && e.ctrlKey === true) ||
+					// Allow: home, end, left, right
+					(e.keyCode >= 35 && e.keyCode <= 39)) {
+					// let it happen, don't do anything
+					return;
+				}
+				// Ensure that it is a number and stop the keypress
+				if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+					e.preventDefault();
+				}
+			});
 		});
 
 	</script>
