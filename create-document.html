@@ -20,7 +20,6 @@
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-
 		gtag('config', 'UA-109254566-1');
 
 	</script>
@@ -173,7 +172,6 @@
 			font-weight: 600;
 			margin-top: 10px;
 		}
-
 
 		.modal.container {
 			max-width: none;
@@ -341,30 +339,19 @@
 		}
 
 		.dropzone {
-
 			/*border: 2px dashed #EB7260;*/
 			/*    box-shadow: 0 0 0 2px #373b44;*/
 			padding: 40px 20px 20px;
-
 			/*background: #373b44;*/
 			color: #7d7d7d;
-
 			text-align: center;
-
 		}
 
-
-
 		.dropzone h3 {
-
 			color: white;
-
 			text-align: center;
-
 			line-height: 3em;
-
 			margin-top: 20px;
-
 		}
 
 		.center {
@@ -978,7 +965,6 @@
 						$(".selectpicker").val('default');
 						$(".selectpicker").selectpicker("refresh");
 					});
-
 				}
 			};
 			$("#reset-btn").on("click", function() {
@@ -986,13 +972,11 @@
 				$('#smartwizard').smartWizard("reset");
 				return true;
 			});
-
 			$("#prev-btn").on("click", function() {
 				// Navigate previous
 				$('#smartwizard').smartWizard("prev");
 				return true;
 			});
-
 			$("#next-btn").on("click", function() {
 				// Navigate next
 				$('#smartwizard').smartWizard("next");
@@ -1003,7 +987,6 @@
 				$('#smartwizard').smartWizard("prev");
 				return true;
 			});
-
 			$("#next-btn-2").on("click", function() {
 				// Navigate next
 				$('#smartwizard').smartWizard("next");
@@ -1014,7 +997,6 @@
 				$('#smartwizard').smartWizard("prev");
 				return true;
 			});
-
 			$("#next-btn-3").on("click", function() {
 				// Navigate next
 				$('#smartwizard').smartWizard("next");
@@ -1032,8 +1014,6 @@
 					$("#next-btn").removeClass('disabled');
 				}
 			});
-
-
 			// Smart Wizard
 			$('#smartwizard').smartWizard({
 				selected: 0,
@@ -1055,8 +1035,6 @@
 					previous: 'رجوع'
 				}
 			});
-
-
 			$("#smartwizard").on("leaveStep", function(e, anchorObject, stepNumber, stepDirection) {
 				var elmForm = $("#form-step-" + stepNumber);
 				// stepDirection === 'forward' :- this condition allows to do the form validation
@@ -1071,12 +1049,10 @@
 				}
 				return true;
 			});
-
 			$('#someSwitchOptionSuccess').change(function() {
 				if (this.checked) {
 					$('#autoUpdate').fadeIn('fast');
 					$('.has-feedback').hide();
-
 				} else {
 					$('#autoUpdate').fadeOut('fast');
 					$('.has-feedback').hide();
@@ -1089,15 +1065,12 @@
 				} else {
 					$('#autoUpdate1').fadeOut('fast');
 					$('.has-feedback1').hide();
-
 				}
 			});
-
 		});
 		$(function() {
 			//group add limit
 			var maxGroup = 10;
-
 			//add more fields group
 			$(".addMore").click(function() {
 				if ($('body').find('.fieldGroup').length < maxGroup) {
@@ -1107,7 +1080,6 @@
 					alert('Maximum ' + maxGroup);
 				}
 			});
-
 			//remove fields group
 			$("body").on("click", ".remove", function() {
 				$(this).parents(".fieldGroup").remove();
@@ -1120,7 +1092,6 @@
 				} else {
 					$('#autoUpdate').fadeOut('fast');
 					$('.has-feedback').hide();
-
 				}
 			});
 			$('input.example').on('change', function() {
@@ -1128,18 +1099,14 @@
 				if ($('#someSwitchOptionSuccess1').checked) {
 					$('#autoUpdate1').fadeIn('fast');
 					$('.has-feedback1').hide();
-
 				} else {
 					$('#autoUpdate1').fadeOut('fast');
 					$('.has-feedback1').hide();
 				}
 			});
-
-
 			$('#optCity').change(function() {
 				$('.has-feedback').show();
 			});
-
 			$(".sweet-14").on("click", function() {
 				swal({
 						title: "هل انتا متاكد ؟",
@@ -1160,7 +1127,6 @@
 						}
 					});
 			});
-
 		});
 
 	</script>
