@@ -1479,7 +1479,7 @@ a:active {
   padding-top: 20px;
 }
 
-.btn {
+.btn-reset {
   border: none;
   background: #00AC00;
   color: white;
@@ -1490,7 +1490,7 @@ a:active {
   padding: 12px 50px;
   cursor: pointer;
 }
-.btn:hover {
+.btn-reset:hover {
   background: #FFCF60;
 	color: white
 
