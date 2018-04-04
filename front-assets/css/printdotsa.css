@@ -1293,6 +1293,7 @@ a:active {
 	display: none;
 	text-align: right
 }
+
 /*
 #autoUpdate_co {
 	margin-top: 10px;
@@ -1300,10 +1301,12 @@ a:active {
 	text-align: right
 }
 */
-.has-feedback{
+
+.has-feedback {
 	display: none;
 	margin-top: 10px
 }
+
 .testy {
 	border: 2px solid #cccccc;
 	padding: 14px 10px 5px;
@@ -1383,32 +1386,112 @@ a:active {
 	border-color: #4cd264;
 	outline: none !important;
 }
-#testimonial  #carousel{
-	margin:30px 0px;
+
+#testimonial #carousel {
+	margin: 30px 0px;
 }
 
-#testimonial .left.carousel-control{
+#testimonial .left.carousel-control {
 	display: inline-block;
-    position: absolute;
-    top:100%;
-	left:20%;
-	font-size:30px;
-	font-weight:bolder;
-	color:#5db4c0; 
+	position: absolute;
+	top: 100%;
+	left: 20%;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #5db4c0;
 }
 
-#testimonial .right.carousel-control{
+#testimonial .right.carousel-control {
 	display: inline-block;
-    position: absolute;
-    top:100%;
-	right:20%;
-	font-size:30px;
-	font-weight:bolder;
-	color:#5db4c0; 
+	position: absolute;
+	top: 100%;
+	right: 20%;
+	font-size: 30px;
+	font-weight: bolder;
+	color: #5db4c0;
 }
 
-#testimonial .fa.fa-quote-right{
-	color:#5db4c0;
-	font-size:13px; 
-	padding-right:10px;
+#testimonial .fa.fa-quote-right {
+	color: #5db4c0;
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+
+.panel {
+  background: transparent;
+  margin: 40px auto;
+  width: 300px;
+  border: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 40px;
+}
+
+.panel__avatar {
+  background: #fff;
+  border: 8px solid #FFCF60;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto 40px;
+  display: block;
+}
+
+.inputs__item {
+  padding-bottom: 40px;
+}
+
+.inputs__label {
+  color: #FFCF60;
+  display: block;
+}
+
+.inputs__input {
+  border: none;
+  border-bottom: 1px solid #5FB7E1;
+  background: #eee;
+  display: block;
+  width: 100%;
+  padding: 12px 10px;
+  font: 16px 'Helvetica Neue', Helvetica, sans-serif;
+  color: #FFCF60;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px
+}
+.inputs__input:focus,
+.btn:focus {
+  outline: none;
+}
+
+.inputs__item--new .inputs__label,
+.inputs__item--new .inputs__input {
+  color: #6498BB;
+}
+
+.inputs__item--cta {
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 20px;
+}
+
+.btn {
+  border: none;
+  background: #00AC00;
+  color: white;
+  font-size: 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px 50px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: #FFCF60;
+	color: white
+
 }
